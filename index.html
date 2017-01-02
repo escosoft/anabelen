@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet"> 
   <link rel="icon" href="favicon.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -32,16 +33,6 @@
           <li><a href="#band">BAND</a></li>
           <li><a href="#tour">TOUR</a></li>
           <li><a href="#contact">CONTACT</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Merchandise</a></li>
-                <li><a href="#">Extras</a></li>
-                <li><a href="#">Media</a></li> 
-              </ul>
-            </li>
-            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
           </ul>
         </div>
       </div>
@@ -49,6 +40,7 @@
 
 
     <!-- Carousel -->
+    <div id="main-display" class="container-fluid">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
         <!-- Indicators -->
@@ -83,14 +75,13 @@
           <span class="sr-only">Next</span>
         </a>
 
-        <div class="main-text">
-          <div class="text-center">
-            <h1>Luis + Ana Belén</h1>
-            <h3>escolar haro lara lara</h3>
-          </div>
+        <div class="main-text text-center">
+            <img src="img/entrada.png" alt="Entrada" width="60%" height=auto>
+            <p id="days">Quedan</p>
         </div>
-      </div>
 
+      </div>
+    </div>
     <!-- Container (The Band Section) -->
     <div id="band" class="container text-center">
       <h3>THE BAND</h3>
@@ -135,15 +126,15 @@
     </div>
 
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-</footer>
+    <!-- Footer -->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a><br><br>
+    </footer>
 
-<script>
-$(document).ready(function(){
+    <script>
+      $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
   
@@ -164,7 +155,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -173,5 +164,41 @@ $(document).ready(function(){
 })
 </script>
 
+<script type="text/javascript">
+  $(document).ready(function(){
+  
+  $(".fluid-container").css("width", $(window).width()).css("height", $(window).height()); 
+  
+  var end = new Date('06/17/2017 07:00 PM');
+  
+  var second = 1000;
+  var minute = second * 60;
+  var hour = minute * 60;
+  var day = hour * 24;
+  var timer;
+  
+  function showRemaining() {
+    
+    var now = new Date;
+    var distance = end - now;
+    
+    if (distance < 0) {
+      clearInterval(timer);                         $('#banner').text('EXPIRED!');
+      return;
+    }
+    
+    var days = Math.floor(distance / day);
+    var hours = Math.floor((distance % day) / hour);
+    var minutes = Math.floor((distance % hour) / minute);
+    var seconds = Math.floor((distance % minute) / second);
+    
+    $('#days').text(days + " días " + hours + " : " + minutes + " : " + seconds);
+    
+  }
+  
+  timer = setInterval(showRemaining, 1000);
+  
+});
+</script>
 </body>
 </html>

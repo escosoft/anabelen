@@ -11,19 +11,32 @@ h3, h4 {
 .container {
   padding: 80px 120px;
 }
-.container-fluid {
+#main-display{
   padding: 0px 0px;
 }
 
-.main-text h1 {color: #fff;}
-
+.main-text h1 {
+  font-family: 'Grand Hotel';  
+  font-size: 70px;
+  font-size: 8vw;
+  color: #fff;
+}
+.main-text p {  
+  font-family: 'Grand Hotel';   
+  font-size: 16px;
+  font-size: 3vw;
+  color: #fff;
+  line-height: 100%;
+  margin-bottom: 2px;
+}
 .main-text
 {
-    position: absolute;
-    bottom: 15%;
-    color: #FFF;
-    background:rgba(0,0,0,0.5);
-    width: 100%;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 10%;
+  color: #FFF;
+  background:rgba(0,0,0,0.3);
 }
 
 .carousel-inner img {
@@ -98,6 +111,7 @@ h3, h4 {
 .navbar li a, .navbar .navbar-brand { 
   color: #d5d5d5 !important;
 }
+
 .navbar-nav li a:hover {
   color: #fff !important;
 }
