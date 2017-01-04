@@ -1,104 +1,23 @@
 body {
   font: 400 15px/1.8 Lato, sans-serif;
+  font-size: 100%;
   color: #777;
 }
+
 h3, h4 {
   margin: 10px 0 30px 0;
   letter-spacing: 10px;      
   font-size: 20px;
   color: #111;
 }
-.container {
-  padding: 80px 120px;
-}
-#main-display{
-  padding: 0px 0px;
+
+.container-fluid{
+  padding-top: 50px;
 }
 
-.main-text h1 {
-  font-family: 'Grand Hotel';  
-  font-size: 70px;
-  font-size: 8vw;
-  color: #fff;
+#navbar-container{
+  padding-top: 0px;
 }
-.main-text p {  
-  font-family: 'Grand Hotel';   
-  font-size: 16px;
-  font-size: 3vw;
-  color: #fff;
-  line-height: 100%;
-  margin-bottom: 2px;
-}
-.main-text
-{
-  position: absolute;
-  width: 70%;
-  left: 15%;
-  bottom: 10%;
-  color: #FFF;
-  background:rgba(0,0,0,0.3);
-}
-
-.carousel-inner img {
-  -webkit-filter: grayscale(10%);
-  filter: grayscale(10%); /* make all photos black and white */ 
-  width: 100%; /* Set width to 100% */
-  margin: auto;
-}
-
-.bg-1 {
-  background: #2d2d30;
-  color: #bdbdbd;
-}
-.bg-1 h3 {color: #fff;}
-.bg-1 p {font-style: italic;}
-.list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.list-group-item:last-child {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.thumbnail {
-  padding: 0 0 15px 0;
-  border: none;
-  border-radius: 0;
-}
-.thumbnail p {
-  margin-top: 15px;
-  color: #555;
-}
-.btn {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #f1f1f1;
-  border-radius: 0;
-  transition: .2s;
-}
-.btn:hover, .btn:focus {
-  border: 1px solid #333;
-  background-color: #fff;
-  color: #000;
-}
-.modal-header, h4, .close {
-  background-color: #333;
-  color: #fff !important;
-  text-align: center;
-  font-size: 30px;
-}
-.modal-header, .modal-body {
-  padding: 40px 50px;
-}
-.nav-tabs li a {
-  color: #777;
-}
-#googleMap {
-  width: 100%;
-  height: 400px;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}  
 .navbar {
   font-family: Montserrat, sans-serif;
   margin-bottom: 0;
@@ -108,6 +27,7 @@ h3, h4 {
   letter-spacing: 4px;
   opacity: 0.9;
 }
+
 .navbar li a, .navbar .navbar-brand { 
   color: #d5d5d5 !important;
 }
@@ -115,23 +35,126 @@ h3, h4 {
 .navbar-nav li a:hover {
   color: #fff !important;
 }
+
 .navbar-nav li.active a {
   color: #fff !important;
   background-color: #29292c !important;
 }
+
 .navbar-default .navbar-toggle {
   border-color: transparent;
 }
+
+.nav-tabs li a {
+  color: #777;
+}
+
 .open .dropdown-toggle {
   color: #fff;
   background-color: #555 !important;
 }
+
 .dropdown-menu li a {
   color: #000 !important;
 }
+
 .dropdown-menu li a:hover {
   background-color: red !important;
 }
+
+#main-display
+{
+  padding: 0px 0px;
+  padding-top: 50px;
+  padding-bottom: -50px;
+  overflow: hidden;
+  background-color: #2d2d30;
+}
+
+#main-text-ext
+{
+  position: absolute;
+
+  width: 80%;
+  height: 100%;
+  top: 0px;
+  left: 10%;
+}
+
+.main-text
+{
+  padding: 2.5%, 2.5%;
+  margin: auto;
+  height: 95%;
+}
+
+.main-text p {  
+  font-family: 'Grand Hotel';   
+  font-size: 16px;
+  font-size: 3vw;
+  color: #fff;
+  line-height: 100%;
+  margin-bottom: 2px;
+}
+
+.main-text img {
+  height: 90%;
+  width: auto;
+  background:rgba(0,0,0,0.3);
+
+}
+
+#myCarousel {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-inner img {
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%); /* make all photos black and white */ 
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
+
+.carousel-indicators {
+  bottom: 5px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+@media only screen and (max-width : 600px) 
+{
+
+  .carousel-inner{
+   width: 600px;
+   left: 50%;
+   margin-left: -300px;
+}
+.carousel-inner img {
+  -webkit-filter: grayscale(10%);
+  filter: grayscale(10%); /* make all photos black and white */ 
+  min-height: 225px;
+  min-width: 600px;
+}
+
+.main-text p {  
+  font-size: 12px;
+}
+.carousel-control{
+  display: none;
+}
+#main-text-ext
+{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+}
+
 footer {
   background-color: #2d2d30;
   color: #f5f5f5;
