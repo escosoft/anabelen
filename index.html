@@ -28,6 +28,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
+        <div id="heart"></div>
         <a class="navbar-brand" href="#myPage">L+AB</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
@@ -83,7 +84,7 @@
 
       <div id="main-text-ext">
         <div class="main-text text-center">
-          <img src="img/entrada.png" alt="Entrada">
+          <img src="img/entrada.svg" alt="Entrada" onerror="this.onerror=null; this.src='img/entrada.png'">>
           <p id="days">Quedan</p>
         </div>
       </div>
@@ -135,8 +136,8 @@
     <ul class="nav nav-tabs">
       <li class="active"><a data-toggle="tab" href="#home-hotels">General</a></li>
       <li><a data-toggle="tab" href="#ramomar">Hotel Ramomar (***)</a></li>
-      <li><a data-toggle="tab" href="#altora">Altora</a></li>
-      <li><a data-toggle="tab" href="#paloma">Paloma</a></li>
+      <li><a data-toggle="tab" href="#altora">Hotel Altora (***)</a></li>
+      <li><a data-toggle="tab" href="#paloma">Hotel Paloma (***)</a></li>
     </ul>
     <div class="tab-content">
       <div id="home-hotels" class="tab-pane fade in active">
@@ -151,7 +152,7 @@
           <div class="col-sm-6">
             <img class="img-responsive" src="img/ramomar.jpg" alt="Ramomar" width="100%" height="auto">
             <div class="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"  frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"  frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-sm-6">
@@ -176,15 +177,15 @@
               Mail: reservas@hotelramomar.com
             </p>
             <h4>Precios</h4>
-            <h5>Habitación Doble</h5>
-            <ul>
-              <li>SOLO ALOJAMIENTO: 40 EUROS</li>
-              <li>ALOJAM. + DESAYUNO: 48 EUROS</li>
-            </ul>
             <h5>Habitación Individual</h5>
             <ul>
-              <li>SOLO ALOJAMIENTO: 32 EUROS</li>
-              <li>ALOJAM. + DESAYUNO: 36 EUROS</li>
+              <li>Solo Alojamiento: 32 EUROS</li>
+              <li>Alojam. + desayuno: 36 EUROS</li>
+            </ul>
+            <h5>Habitación Doble</h5>
+            <ul>
+              <li>Solo Alojamiento: 40 EUROS</li>
+              <li>Alojam. + desayuno: 48 EUROS</li>
             </ul>
             <h4>Notas</h4>
             <ul>
@@ -198,12 +199,107 @@
 
       </div>
       <div id="altora" class="tab-pane fade">
-        <h2>Peter Griffin, Bass player</h2>
-        <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive" src="img/altora.jpg" alt="Altora" width="100%" height="auto">
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.661943129655!2d-3.0220086846418743!3d39.15966997953096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7f0272c05f%3A0x9df49e29a70ab407!2sHOTEL+ALTORA!5e0!3m2!1ses!2ses!4v1483646691472" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h4>General</h4>
+            <p>
+              Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
+            </p>
+            <p>
+              HOTEL ALTORA (***) <br>
+              C/ Rvdo Padre Pedro, 2 <br>
+              13700 Tomelloso - Ciudad Real <br>
+              Teléfono: 926 51 07 25 <br>
+              Web: <a href="http://www.hotelaltora.es/">www.hotelaltora.es</a> <br>
+              Email: info@hotelaltora.es o reservas@hotelaltora.es
+            </p>
+            <h4>Precios</h4>
+            <h5>Habitación Individual</h5>
+            <ul>
+              <li>Solo alojamiento: 38'25€</li>
+              <li>Alojamiento + desayuno: 42'50 €</li>
+            </ul>
+            <h5>Habitación Doble</h5>
+            <ul>
+              <li>Solo alojamiento: 46'75 €</li>
+              <li>Alojamiento + desayuno: 55'25 €</li>
+            </ul>
+            <h5>Habitación Triple</h5>
+            <ul>
+              <li>Solo alojamiento: 72'25 €</li>
+              <li>Alojamiento + desayuno: 59,5 €</li>
+            </ul>
+            <h4>Notas</h4>
+            <ul>
+              <li>16 habitaciones personalizadas distribuidas en 3 plantas, 5 triples y 11 que pueden tener uso doble o individual.</li>
+              <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+              <li>Cunas a disposición de los clientes sin coste añadido y la posibilidad de montar una cama supletoria en la habitación (precio según tarifa).</li>
+              <li>El hotel tiene a disposición de todos los clientes una sala de estar en primera planta con terraza, gimnasio, sala de juegos para los más pequeños, wifi gratuito y cafetería dónde podrá degustar platos típicos de la zona.</li>
+              <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="paloma" class="tab-pane fade">
-        <h2>Peter Griffin, Bass player</h2>
-        <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="img-responsive" src="img/paloma.jpg" alt="Paloma" width="100%" height="auto">
+            <div class="google-maps">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.6903059441465!2d-3.024030984641909!3d39.15902497953111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7e653bf635%3A0x58412506de954b0d!2sHOTEL+PALOMA+TOMELLOSO!5e0!3m2!1ses!2ses!4v1483647553903" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <h4>General</h4>
+            <p>
+              Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
+            </p>
+            <p>
+              HOTEL PALOMA (***) <br>
+              C/ Campo, 12 <br>
+              13700 Tomelloso - Ciudad Real <br>
+              Tel: 926 513 300 - 926 513 304 <br>
+              Fax: 926 513 308 <br>
+              Web: <a href="http://www.hotelpalomatomelloso.es/">www.hotelpalomatomelloso.es</a> <br>
+              Email: info@hotelpalomatomelloso.es
+            </p>
+            <h4>Precios</h4>
+            <h5>Habitación Individual</h5>
+            <ul>
+              <li>Solo alojamiento: 44€ (43€ con descuento)</li>
+              <li>Alojamiento + desayuno: 49€ (46€ con descuento)</li>
+            </ul>
+            <h5>Habitación Doble</h5>
+            <ul>
+              <li>Solo alojamiento: 55€ (50€ con descuento)</li>
+              <li>Alojamiento + desayuno: 65€ (60€ con descuento)</li>
+            </ul>
+            <h5>Habitación Triple</h5>
+            <ul>
+              <li>Solo alojamiento: 70€</li>
+              <li>Alojamiento + desayuno: 80€ (75€ con descuento)</li>
+            </ul>
+            <h5>Habitación Cuádruple</h5>
+            <ul>
+              <li>Solo alojamiento: 90 € (85€ con descuento)</li>
+              <li>Alojamiento + desayuno: 80€</li>
+            </ul>
+            <h4>Notas</h4>
+            <ul>
+              <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+              <li>Cunas a disposición de los clientes sin coste añadido.</li>
+              <li>- En habitaciones con camas supletorias gratuitidad para el primer niño menor de 12 años.</li>
+              <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
