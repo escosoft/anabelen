@@ -11,6 +11,10 @@ h3, h4 {
   color: #111;
 }
 
+p, li{
+  font-size: 1.25em;
+}
+
 .container-fluid{
   padding-top: 50px;
 }
@@ -118,8 +122,8 @@ h3, h4 {
 
 .carousel-indicators {
   bottom: 5px;
-padding-bottom: 0px;
-margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 @media only screen and (max-width : 600px) 
@@ -129,8 +133,8 @@ margin-bottom: 0px;
    width: 600px;
    left: 50%;
    margin-left: -300px;
-}
-.carousel-inner img {
+ }
+ .carousel-inner img {
   -webkit-filter: grayscale(10%);
   filter: grayscale(10%); /* make all photos black and white */ 
   min-height: 225px;
@@ -153,6 +157,19 @@ margin-bottom: 0px;
   left: 0px;
 }
 
+}
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 footer {
