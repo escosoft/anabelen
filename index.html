@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"> 
   <link rel="icon" href="favicon.png" type="image/png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -34,12 +35,23 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#welcome">BIENVENIDOS</a></li>
-          <li><a href="#we">NOSOTROS</a></li>
-          <li><a href="#contact">LA BODA</a></li>
-          <li><a href="#hotels">HOTELES</a></li>
-          <li><a href="#contact">CÓMO LLEGAR</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">LA BODA<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#we">NOSOTROS</a></li>
+              <li><a href="#day">EL DÍA</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">INFORMACIÓN<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#where">CÓMO LLEGAR</a></li>
+              <li><a href="#hotels">HOTELES</a></li>
+              <li><a href="#hair">PELUQUERÍAS</a></li>
+            </ul>
+          </li>
           <li><a href="#contact">BLOG</a></li>
-          <li><a href="#contact">CONTACTO</a></li>
+          <li><a href="#contact">CONFIRMA</a></li>
         </ul>
       </div>
     </div>
@@ -84,7 +96,7 @@
 
       <div id="main-text-ext">
         <div class="main-text text-center">
-          <img src="img/entrada.svg" alt="Entrada" onerror="this.onerror=null; this.src='img/entrada.png'">>
+          <img src="img/entrada_paleta.svg" alt="Entrada" onerror="this.onerror=null; this.src='img/entrada.png'">>
           <p id="days">Quedan</p>
         </div>
       </div>
@@ -96,12 +108,14 @@
     <h3>¡BIENVENIDOS!</h3>
     <p>No es broma, de verdad. ¡Nos casamos! Y "sólo" quedan 6 meses.
       Y si estás leyendo esto es porque queremos que tú también seas cómplice de uno de los días más señalados en nuestra ya consolidada relación, ¡nuestra boda! Por eso hemos querido crear esta web para manteneros informados sobre todos los detalles importantes de la misma, aquellos que os van a ser de mucha utilidad.
+      <br>
       Os animamos a que os deis un paseo por la página y no olvidéis pasaros de vez en cuando por nuestro blog, que será donde iremos colgando las novedades que os harán partícipes de este proceso de elaboración. Además, si ya tenéis claro que podréis asistir confirmadlo en la pestaña correspondiente para hacernos más fácil la organización.
+      <br>
       Queremos que nuestra boda sea un día de celebración y de mucha diversión, así que estamos abiertos a sugerencias y os dejamos que tengáis iniciativa propia si queréis aportar algo o sorprendernos de cualquier manera.
       Un beso muy grande,
+      <br>
       Luis y Ana Belén
     </p>
-    <br>
   </div>
 
   <div id="we" class="container-fluid">
@@ -131,188 +145,207 @@
     </div>
   </div>
 
-  <div id="hotels" class="container-fluid">
-    <h3 class="text-center">HOTELES</h3> 
-    <ul class="nav nav-tabs">
-      <li class="active"><a data-toggle="tab" href="#home-hotels">General</a></li>
-      <li><a data-toggle="tab" href="#ramomar">Hotel Ramomar (***)</a></li>
-      <li><a data-toggle="tab" href="#altora">Hotel Altora (***)</a></li>
-      <li><a data-toggle="tab" href="#paloma">Hotel Paloma (***)</a></li>
+  <div id="day" class="container-fluid">
+   <section class="timeline">
+    <ul>
+      <li>
+        <div>
+          <time>9 AM</time>
+          Some content here
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>10 AM</time>
+          Some content here
+        </div>
+      </li>
     </ul>
-    <div class="tab-content">
-      <div id="home-hotels" class="tab-pane fade in active">
-        <h2>General</h2>
-        <p>Este sección va dirigida a todos los que venís de fuera de Tomelloso y necesitáis alojamiento para recuperaros de la boda y de la preboda (el viernes 16 organizaremos algo para todos los que ya estéis por allí). Para facilitaros la logística hemos bloqueado habitaciones en tres hoteles, dos de ellos al completo, ya que de esta manera tendréis un buen descuento cortesía de la Mancha. La reserva la podéis hacer tanto para el fin de semana completo como para el sábado exclusivamente.
-          Es muy importante que para beneficiaros del descuento la reserva la hagáis a través del teléfono directo del hotel indicando que vais a la boda de Luis y Ana Belén. El bloqueo de las habitaciones a nombre de nuestra boda dura hasta finales de abril, a partir de entonces no se aplicaría el descuento.
-          Existen otros hoteles y apartamentos turísticos en la ciudad aparte de los que hemos reservado y también existe la posibilidad de buscar alojamiento en Alcázar de San Juan, ya que dispone de estación de tren muy bien comunicada, aunque en principio no contemplamos que la ruta del autobús pase por allí.
-        </p>
-      </div>
-      <div id="ramomar" class="tab-pane fade">
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="img-responsive" src="img/ramomar.jpg" alt="Ramomar" width="100%" height="auto">
-            <div class="google-maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"  frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h4>General</h4>
-            <p>
-              Está situado muy cerca de la Plaza de Toros, desde donde está previsto que
-              hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
-            </p>
-            <p>
-              El hotel dispone de 42 habitaciones, distribuidas en 30 habitaciones dobles
-              y 12 individuales. En algunas habitaciones dobles se puede disponer de una
-              cama supletoria o cuna, bajo petición al realizar la reserva. También
-              dispone de habitaciones familiares, con capacidad para 4 personas, así como <strong>parking subterráneo y piscina exterior.</strong>
-            </p>
-            <p>
-              HOTEL RAMOMAR*** <br>
-              C/ CONCORDIA, 17 <br>
-              13.700 – TOMELLOSO (C.REAL) <br>
-              Telef. 926 505 994 <br>
-              Fax. 926 505 365 <br>
-              Web: <a href="http://www.hotelramomar.com/">www.hotelramomar.com</a> <br>
-              Mail: reservas@hotelramomar.com
-            </p>
-            <h4>Precios</h4>
-            <h5>Habitación Individual</h5>
-            <ul>
-              <li>Solo Alojamiento: 32 EUROS</li>
-              <li>Alojam. + desayuno: 36 EUROS</li>
-            </ul>
-            <h5>Habitación Doble</h5>
-            <ul>
-              <li>Solo Alojamiento: 40 EUROS</li>
-              <li>Alojam. + desayuno: 48 EUROS</li>
-            </ul>
-            <h4>Notas</h4>
-            <ul>
-              <li>Precios por día y con IVA INCLUIDO, en el régimen indicado.</li>
-              <li>Las reservas se tendrán que hacer directamente con el hotel, a través de teléfono directo 926 505 994, o mediante correo electrónico a la dirección reservas@hotelramomar.com.</li>
-              <li>Política de cancelación: las habitaciones reservadas se podrán cancelar o modificar sin coste alguno como máximo un mes antes de la fecha de la reserva. Pasada esa fecha, el coste de cancelación o modificación será de una noche.</li>
-              <li>Cuando realicen la reserva se pedirá un número de tarjeta de crédito y su caducidad como garantía de la misma.</li>
-            </ul>
+  </section>
+</div>
+
+<div id="hotels" class="container-fluid">
+  <h3 class="text-center">HOTELES</h3> 
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home-hotels">General</a></li>
+    <li><a data-toggle="tab" href="#ramomar">Hotel Ramomar (***)</a></li>
+    <li><a data-toggle="tab" href="#altora">Hotel Altora (***)</a></li>
+    <li><a data-toggle="tab" href="#paloma">Hotel Paloma (***)</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="home-hotels" class="tab-pane fade in active">
+      <h2>General</h2>
+      <p>Este sección va dirigida a todos los que venís de fuera de Tomelloso y necesitáis alojamiento para recuperaros de la boda y de la preboda (el viernes 16 organizaremos algo para todos los que ya estéis por allí). Para facilitaros la logística hemos bloqueado habitaciones en tres hoteles, dos de ellos al completo, ya que de esta manera tendréis un buen descuento cortesía de la Mancha. La reserva la podéis hacer tanto para el fin de semana completo como para el sábado exclusivamente.
+        Es muy importante que para beneficiaros del descuento la reserva la hagáis a través del teléfono directo del hotel indicando que vais a la boda de Luis y Ana Belén. El bloqueo de las habitaciones a nombre de nuestra boda dura hasta finales de abril, a partir de entonces no se aplicaría el descuento.
+        Existen otros hoteles y apartamentos turísticos en la ciudad aparte de los que hemos reservado y también existe la posibilidad de buscar alojamiento en Alcázar de San Juan, ya que dispone de estación de tren muy bien comunicada, aunque en principio no contemplamos que la ruta del autobús pase por allí.
+      </p>
+    </div>
+    <div id="ramomar" class="tab-pane fade">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="img-responsive" src="img/ramomar.jpg" alt="Ramomar" width="100%" height="auto">
+          <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"  frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-
-      </div>
-      <div id="altora" class="tab-pane fade">
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="img-responsive" src="img/altora.jpg" alt="Altora" width="100%" height="auto">
-            <div class="google-maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.661943129655!2d-3.0220086846418743!3d39.15966997953096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7f0272c05f%3A0x9df49e29a70ab407!2sHOTEL+ALTORA!5e0!3m2!1ses!2ses!4v1483646691472" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h4>General</h4>
-            <p>
-              Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
-            </p>
-            <p>
-              HOTEL ALTORA (***) <br>
-              C/ Rvdo Padre Pedro, 2 <br>
-              13700 Tomelloso - Ciudad Real <br>
-              Teléfono: 926 51 07 25 <br>
-              Web: <a href="http://www.hotelaltora.es/">www.hotelaltora.es</a> <br>
-              Email: info@hotelaltora.es o reservas@hotelaltora.es
-            </p>
-            <h4>Precios</h4>
-            <h5>Habitación Individual</h5>
-            <ul>
-              <li>Solo alojamiento: 38'25€</li>
-              <li>Alojamiento + desayuno: 42'50 €</li>
-            </ul>
-            <h5>Habitación Doble</h5>
-            <ul>
-              <li>Solo alojamiento: 46'75 €</li>
-              <li>Alojamiento + desayuno: 55'25 €</li>
-            </ul>
-            <h5>Habitación Triple</h5>
-            <ul>
-              <li>Solo alojamiento: 72'25 €</li>
-              <li>Alojamiento + desayuno: 59,5 €</li>
-            </ul>
-            <h4>Notas</h4>
-            <ul>
-              <li>16 habitaciones personalizadas distribuidas en 3 plantas, 5 triples y 11 que pueden tener uso doble o individual.</li>
-              <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
-              <li>Cunas a disposición de los clientes sin coste añadido y la posibilidad de montar una cama supletoria en la habitación (precio según tarifa).</li>
-              <li>El hotel tiene a disposición de todos los clientes una sala de estar en primera planta con terraza, gimnasio, sala de juegos para los más pequeños, wifi gratuito y cafetería dónde podrá degustar platos típicos de la zona.</li>
-              <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
-
-            </ul>
-          </div>
+        <div class="col-sm-6">
+          <h4>General</h4>
+          <p>
+            Está situado muy cerca de la Plaza de Toros, desde donde está previsto que
+            hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
+          </p>
+          <p>
+            El hotel dispone de 42 habitaciones, distribuidas en 30 habitaciones dobles
+            y 12 individuales. En algunas habitaciones dobles se puede disponer de una
+            cama supletoria o cuna, bajo petición al realizar la reserva. También
+            dispone de habitaciones familiares, con capacidad para 4 personas, así como <strong>parking subterráneo y piscina exterior.</strong>
+          </p>
+          <p>
+            HOTEL RAMOMAR*** <br>
+            C/ CONCORDIA, 17 <br>
+            13.700 – TOMELLOSO (C.REAL) <br>
+            Telef. 926 505 994 <br>
+            Fax. 926 505 365 <br>
+            Web: <a href="http://www.hotelramomar.com/">www.hotelramomar.com</a> <br>
+            Mail: reservas@hotelramomar.com
+          </p>
+          <h4>Precios</h4>
+          <h5>Habitación Individual</h5>
+          <ul>
+            <li>Solo Alojamiento: 32 EUROS</li>
+            <li>Alojam. + desayuno: 36 EUROS</li>
+          </ul>
+          <h5>Habitación Doble</h5>
+          <ul>
+            <li>Solo Alojamiento: 40 EUROS</li>
+            <li>Alojam. + desayuno: 48 EUROS</li>
+          </ul>
+          <h4>Notas</h4>
+          <ul>
+            <li>Precios por día y con IVA INCLUIDO, en el régimen indicado.</li>
+            <li>Las reservas se tendrán que hacer directamente con el hotel, a través de teléfono directo 926 505 994, o mediante correo electrónico a la dirección reservas@hotelramomar.com.</li>
+            <li>Política de cancelación: las habitaciones reservadas se podrán cancelar o modificar sin coste alguno como máximo un mes antes de la fecha de la reserva. Pasada esa fecha, el coste de cancelación o modificación será de una noche.</li>
+            <li>Cuando realicen la reserva se pedirá un número de tarjeta de crédito y su caducidad como garantía de la misma.</li>
+          </ul>
         </div>
       </div>
-      <div id="paloma" class="tab-pane fade">
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="img-responsive" src="img/paloma.jpg" alt="Paloma" width="100%" height="auto">
-            <div class="google-maps">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.6903059441465!2d-3.024030984641909!3d39.15902497953111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7e653bf635%3A0x58412506de954b0d!2sHOTEL+PALOMA+TOMELLOSO!5e0!3m2!1ses!2ses!4v1483647553903" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <h4>General</h4>
-            <p>
-              Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
-            </p>
-            <p>
-              HOTEL PALOMA (***) <br>
-              C/ Campo, 12 <br>
-              13700 Tomelloso - Ciudad Real <br>
-              Tel: 926 513 300 - 926 513 304 <br>
-              Fax: 926 513 308 <br>
-              Web: <a href="http://www.hotelpalomatomelloso.es/">www.hotelpalomatomelloso.es</a> <br>
-              Email: info@hotelpalomatomelloso.es
-            </p>
-            <h4>Precios</h4>
-            <h5>Habitación Individual</h5>
-            <ul>
-              <li>Solo alojamiento: 44€ (43€ con descuento)</li>
-              <li>Alojamiento + desayuno: 49€ (46€ con descuento)</li>
-            </ul>
-            <h5>Habitación Doble</h5>
-            <ul>
-              <li>Solo alojamiento: 55€ (50€ con descuento)</li>
-              <li>Alojamiento + desayuno: 65€ (60€ con descuento)</li>
-            </ul>
-            <h5>Habitación Triple</h5>
-            <ul>
-              <li>Solo alojamiento: 70€</li>
-              <li>Alojamiento + desayuno: 80€ (75€ con descuento)</li>
-            </ul>
-            <h5>Habitación Cuádruple</h5>
-            <ul>
-              <li>Solo alojamiento: 90 € (85€ con descuento)</li>
-              <li>Alojamiento + desayuno: 80€</li>
-            </ul>
-            <h4>Notas</h4>
-            <ul>
-              <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
-              <li>Cunas a disposición de los clientes sin coste añadido.</li>
-              <li>- En habitaciones con camas supletorias gratuitidad para el primer niño menor de 12 años.</li>
-              <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
 
-            </ul>
+    </div>
+    <div id="altora" class="tab-pane fade">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="img-responsive" src="img/altora.jpg" alt="Altora" width="100%" height="auto">
+          <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.661943129655!2d-3.0220086846418743!3d39.15966997953096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7f0272c05f%3A0x9df49e29a70ab407!2sHOTEL+ALTORA!5e0!3m2!1ses!2ses!4v1483646691472" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>General</h4>
+          <p>
+            Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
+          </p>
+          <p>
+            HOTEL ALTORA (***) <br>
+            C/ Rvdo Padre Pedro, 2 <br>
+            13700 Tomelloso - Ciudad Real <br>
+            Teléfono: 926 51 07 25 <br>
+            Web: <a href="http://www.hotelaltora.es/">www.hotelaltora.es</a> <br>
+            Email: info@hotelaltora.es o reservas@hotelaltora.es
+          </p>
+          <h4>Precios</h4>
+          <h5>Habitación Individual</h5>
+          <ul>
+            <li>Solo alojamiento: 38'25€</li>
+            <li>Alojamiento + desayuno: 42'50 €</li>
+          </ul>
+          <h5>Habitación Doble</h5>
+          <ul>
+            <li>Solo alojamiento: 46'75 €</li>
+            <li>Alojamiento + desayuno: 55'25 €</li>
+          </ul>
+          <h5>Habitación Triple</h5>
+          <ul>
+            <li>Solo alojamiento: 72'25 €</li>
+            <li>Alojamiento + desayuno: 59,5 €</li>
+          </ul>
+          <h4>Notas</h4>
+          <ul>
+            <li>16 habitaciones personalizadas distribuidas en 3 plantas, 5 triples y 11 que pueden tener uso doble o individual.</li>
+            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+            <li>Cunas a disposición de los clientes sin coste añadido y la posibilidad de montar una cama supletoria en la habitación (precio según tarifa).</li>
+            <li>El hotel tiene a disposición de todos los clientes una sala de estar en primera planta con terraza, gimnasio, sala de juegos para los más pequeños, wifi gratuito y cafetería dónde podrá degustar platos típicos de la zona.</li>
+            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="paloma" class="tab-pane fade">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="img-responsive" src="img/paloma.jpg" alt="Paloma" width="100%" height="auto">
+          <div class="google-maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.6903059441465!2d-3.024030984641909!3d39.15902497953111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7e653bf635%3A0x58412506de954b0d!2sHOTEL+PALOMA+TOMELLOSO!5e0!3m2!1ses!2ses!4v1483647553903" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h4>General</h4>
+          <p>
+            Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.
+          </p>
+          <p>
+            HOTEL PALOMA (***) <br>
+            C/ Campo, 12 <br>
+            13700 Tomelloso - Ciudad Real <br>
+            Tel: 926 513 300 - 926 513 304 <br>
+            Fax: 926 513 308 <br>
+            Web: <a href="http://www.hotelpalomatomelloso.es/">www.hotelpalomatomelloso.es</a> <br>
+            Email: info@hotelpalomatomelloso.es
+          </p>
+          <h4>Precios</h4>
+          <h5>Habitación Individual</h5>
+          <ul>
+            <li>Solo alojamiento: 44€ (43€ con descuento)</li>
+            <li>Alojamiento + desayuno: 49€ (46€ con descuento)</li>
+          </ul>
+          <h5>Habitación Doble</h5>
+          <ul>
+            <li>Solo alojamiento: 55€ (50€ con descuento)</li>
+            <li>Alojamiento + desayuno: 65€ (60€ con descuento)</li>
+          </ul>
+          <h5>Habitación Triple</h5>
+          <ul>
+            <li>Solo alojamiento: 70€</li>
+            <li>Alojamiento + desayuno: 80€ (75€ con descuento)</li>
+          </ul>
+          <h5>Habitación Cuádruple</h5>
+          <ul>
+            <li>Solo alojamiento: 90 € (85€ con descuento)</li>
+            <li>Alojamiento + desayuno: 80€</li>
+          </ul>
+          <h4>Notas</h4>
+          <ul>
+            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+            <li>Cunas a disposición de los clientes sin coste añadido.</li>
+            <li>- En habitaciones con camas supletorias gratuitidad para el primer niño menor de 12 años.</li>
+            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+
+          </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-      <span class="glyphicon glyphicon-chevron-up"></span>
-    </a><br><br>
-  </footer>
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+</footer>
 
-  <script>
-    $(document).ready(function(){
+<script>
+  $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
   
