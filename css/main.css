@@ -1,10 +1,15 @@
+html{
+  font-size: 16px;
+}
+
+
 body {
   font: 400 15px/1.8 Lato, sans-serif;
   font-size: 100%;
   color: #777
 }
 
-h3, h4 {
+h3 {
   margin: 10px 0 30px 0;
   letter-spacing: 10px;      
   font-size: 20px;
@@ -16,8 +21,16 @@ content: url('../img/divider.png');
 display: block;
 }
 
+
+h4 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;      
+  font-size: 18px;
+  color: #111;
+}
+
 p, li{
-  font-size: 1.5em;
+  font-size: 1rem;
 }
 
 .container-fluid{
@@ -38,48 +51,46 @@ p, li{
   opacity: 0.9;
 }
 
-.navbar li a, .navbar .navbar-brand { 
-  color: #d5d5d5 !important;
-  font-size: 11px;
+/* Add a gray color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+    font-size: 11px;
 }
 
-.navbar-brand{
-  right: 50px;
-}
-
+/* On hover, the links will turn white */
 .navbar-nav li a:hover {
-  color: #fff;
-  font-size: 11px;
+    color: #fff !important;
 }
 
+/* The active link */
 .navbar-nav li.active a {
-  color: #fff;
-  background-color: #29292c;
-  font-size: 11px;
+    color: #fff !important;
+    background-color:#29292c !important;
 }
 
+/* Remove border color from the collapsible button */
 .navbar-default .navbar-toggle {
-  border-color: transparent;
+    border-color: transparent;
 }
 
-.nav-tabs li a {
-  font-size: 11px;
-  color: #777;
-}
-
+/* Dropdown */
 .open .dropdown-toggle {
-  color: #fff;
-  background-color: #555 !important;
-  font-size: 11px;
+    color: #fff ;
+    background-color: #555 !important;
 }
 
+/* Dropdown links */
 .dropdown-menu li a {
-  font-size: 11px;
-  color: #000 !important;
+    color: #000 !important;
 }
 
+/* On hover, the dropdown links will turn red */
 .dropdown-menu li a:hover {
-  background-color: red !important;
+    background-color: red !important;
+}
+
+.dropdown-menu.active {
+  background-color: blue;
 }
 
 #main-display
@@ -304,7 +315,7 @@ textarea {
   transform-origin: 100% 100%;
 }
 
-.timeline ul li {
+.timeline ul.timeline-elemenent li.timeline-elemenent {
   list-style-type: none;
   position: relative;
   width: 6px;
@@ -313,7 +324,7 @@ textarea {
   background: #fff;
 }
  
-.timeline ul li::after {
+.timeline ul.timeline-elemenent li.timeline-elemenent::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -325,7 +336,7 @@ textarea {
   background: inherit;
 }
 
-.timeline ul li div {
+.timeline ul.timeline-elemenent li.timeline-elemenent div {
   position: relative;
   bottom: 0;
   width: 400px;
@@ -333,7 +344,7 @@ textarea {
   background: white;
 }
  
-.timeline ul li div::before {
+.timeline ul.timeline-elemenent li.timeline-elemenent div::before {
   content: '';
   position: absolute;
   bottom: 7px;
@@ -342,21 +353,21 @@ textarea {
   border-style: solid;
 }
 
-.timeline ul li:nth-child(odd) div {
+.timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(odd) div {
   left: 45px;
 }
  
-.timeline ul li:nth-child(odd) div::before {
+.timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
   border-color: transparent #F45B69 transparent transparent;
 }
 
-.timeline ul li:nth-child(even) div {
+.timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(even) div {
   left: -439px;
 }
  
-.timeline ul li:nth-child(even) div::before {
+.timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
   border-color: transparent transparent transparent #F45B69;
@@ -368,28 +379,28 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
+  .timeline ul.timeline-elemenent li.timeline-elemenent div {
     width: 250px;
   }
-  .timeline ul li:nth-child(even) div {
+  .timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(even) div {
     left: -289px; /*250+45-6*/
   }
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
+  .timeline ul.timeline-elemenent li.timeline-elemenent {
     margin-left: 20px;
   }
    
-  .timeline ul li div {
+  .timeline ul.timeline-elemenent li.timeline-elemenent div {
     width: calc(100vw - 91px);
   }
    
-  .timeline ul li:nth-child(even) div {
+  .timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(even) div {
     left: 45px;
   }
    
-  .timeline ul li:nth-child(even) div::before {
+  .timeline ul.timeline-elemenent li.timeline-elemenent:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
