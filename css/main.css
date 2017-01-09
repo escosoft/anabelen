@@ -6,7 +6,7 @@ html{
 body {
   font: 400 15px/1.8 Lato, sans-serif;
   font-size: 100%;
-  color: #777
+  color: #777;
 }
 
 h3 {
@@ -33,9 +33,6 @@ p, li{
   font-size: 1rem;
 }
 
-.container-fluid{
-  padding-top: 50px;
-}
 
 #navbar-container{
   padding-top: 0px;
@@ -53,13 +50,14 @@ p, li{
 
 /* Add a gray color to all navbar links */
 .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+    color: #d5d5d5;
     font-size: 11px;
 }
 
 /* On hover, the links will turn white */
 .navbar-nav li a:hover {
     color: #fff !important;
+    font-weight: bold;
 }
 
 /* The active link */
@@ -89,14 +87,18 @@ p, li{
     background-color: red !important;
 }
 
-.dropdown-menu.active {
-  background-color: blue;
+/* Dropdown links */
+.dropdown.active.open li a {
+    color: #000 !important;
+    background-color: #FFF !important;
+}
+
+.container-fluid {
+  padding: 50px 0 10px 0;
 }
 
 #main-display
 {
-  padding: 0px 0px;
-  padding-top: 50px;
   overflow: hidden;
   background-color: #2d2d30;
 }
