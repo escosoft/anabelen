@@ -1,5 +1,6 @@
 body {
   color: #777;
+  padding-top: 50px;
 }
 
 h3 {
@@ -20,6 +21,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+iframe {
+  width: 100%;
+  height: auto;
+}
+
 
 .navbar {
   margin-bottom: 0;
@@ -44,7 +51,7 @@ img {
   min-height: 100vh;
   overflow: hidden;
   background-color: #2d2d30;
-  padding: 50px 0 0 0;
+  padding: 0 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,12 +185,6 @@ height: 100%;
   left: 0;
   width: 100% !important;
   height: 100% !important;
-}
-
-#monteguerra{
-  width: 60%;
-  height: 60%;
-  margin: 0 auto;
 }
 
 footer {
