@@ -48,7 +48,7 @@ iframe {
 
 #main-display
 {
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   overflow: hidden;
   background-color: #2d2d30;
   padding: 0 0 0 0;
@@ -84,9 +84,8 @@ iframe {
 }
 
 .main-text img {
-  height: 90%;
-  width: auto;
-
+  max-height:90%;
+  max-width:100%;
 }
 
 #myCarousel {
