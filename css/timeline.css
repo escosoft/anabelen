@@ -132,6 +132,9 @@ Main components
 .cd-timeline-content h2 {
   color: #303e49;
 }
+.cd-timeline-content p{
+  color: #000;
+}
 .cd-timeline-content::before {
   content: '';
   position: absolute;

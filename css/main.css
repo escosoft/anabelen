@@ -58,7 +58,7 @@ iframe {
   width: 100%;
 }
 
-.navbar li a, .navbar .navbar-brand {
+.navbar li a, .navbar .navbar-brand, .navbar-toggle {
     font-family: Montserrat, sans-serif;
     font-size: 11px;
     letter-spacing: 4px;
@@ -117,6 +117,54 @@ iframe {
   margin-bottom: 2px;
 }
 
+.cloud-holder{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 20px;
+  max-width: 150px;
+  max-height: 75px;
+  background-image: url("../img/cloud.svg");
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  color: #000;
+    animation: fly 10s ease infinite;
+}
+
+@keyframes fly {
+    20%  {
+          -webkit-transform: translate(-30px,30px);
+    -moz-transform: translate(-30px,30px);
+    -o-transform: translate(-30px,30px);
+    -ms-transform: translate(-30px,30px);
+    transform: translate(-30px,30px);
+    }
+    40%  {
+          -webkit-transform: translate(-30px,30px);
+    -moz-transform: translate(-30px,30px);
+    -o-transform: translate(-30px,30px);
+    -ms-transform: translate(-30px,30px);
+    transform: translate(-30px,30px);
+    }
+    60%  {
+          -webkit-transform: translate(-30px,30px);
+    -moz-transform: translate(-30px,30px);
+    -o-transform: translate(-30px,30px);
+    -ms-transform: translate(-30px,30px);
+    transform: translate(-30px,30px);
+    }
+    80% {
+          -webkit-transform: translate(-30px,30px);
+    -moz-transform: translate(-30px,30px);
+    -o-transform: translate(-30px,30px);
+    -ms-transform: translate(-30px,30px);
+    transform: translate(-30px,30px);
+    }
+}
+
 .shadow{
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,Color='#444')";
   filter: url(#drop-shadow);
@@ -148,9 +196,8 @@ iframe {
   color: #FFF;
 }
 
-.caption {  
-    border: 2px solid #FFF;
-    margin: 10px;
+.caption {
+  margin-top: 10px;
     box-shadow: 0 0 30px black;
   text-align: center;
 }
@@ -175,7 +222,6 @@ iframe {
     -o-background-size: cover;
   margin-bottom: 20px;
     box-shadow: 0 0 30px black;
-    padding:0 15px 0 15px;
     border-radius: 25px;
 }
 
