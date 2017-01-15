@@ -104,12 +104,10 @@
                 <button class="btn btn-default" onclick="plusDivs(1)" type="button">Next ❯</button>
             </div>
         </div>
-        <div class="cloud-holder">
+        <div class="main-days">
             <object id="date" class="shadow" data="img/days.svg" type="image/svg+xml">
                     No SVG support
             </object>
-            <p id="days">Quedan</p>
-            <p id="hour">Quedan</p>
         </div>
     </header>
     <div class="container main-row" id="welcome">
@@ -715,14 +713,6 @@
     <script type="text/javascript">
                     $(window).load(function () {
 
-                    //alert("Document loaded, including graphics and embedded documents (like SVG)");
-                    var a = document.getElementById("date");
-
-                    //get the inner DOM of alpha.svg
-                    var svgDoc = a.contentDocument;
-
-                    //get the inner element by id
-                        var svgItem = svgDoc.getElementById("tspan10531");
                         svgItem.textContent = "culo";
                 });
                     $(window).load(function() {
@@ -732,12 +722,16 @@
                         var hour = minute * 60;
                         var day = hour * 24;
                         var timer;     
-                        // Get the Object by ID
-                        var a = document.getElementById("date");       
-                        var svgDoc = a.contentDocument;
-                        // Get one of the SVG items by ID;
-                        var svgItem = svgDoc.getElementById("tspan10531");
-                        svgItem.text("culo");
+
+                    //alert("Document loaded, including graphics and embedded documents (like SVG)");
+                    var a = document.getElementById("date");
+
+                    //get the inner DOM of alpha.svg
+                    var svgDoc = a.contentDocument;
+
+                    //get the inner element by id
+                        var dayline = svgDoc.getElementById("tspan10531");
+                        var hourline = svgDoc.getElementById("tspan10535");
 
                         function showRemaining() {
                             var now = new Date;
@@ -751,8 +745,9 @@
                             var hours = Math.floor((distance % day) / hour);
                             var minutes = Math.floor((distance % hour) / minute);
                             var seconds = Math.floor((distance % minute) / second);
-                            $('#days').text(days + " días");
-                            $('#hour').text(hours + " h " + minutes + " m " + seconds);
+
+                            dayline.textContent = "Quedan " + days + " días";
+                            hourline.textContent = hours + " h " + minutes + " m " + seconds + " s";
                         }
                         timer = setInterval(showRemaining, 1000);
                     });

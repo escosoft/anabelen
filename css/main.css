@@ -78,7 +78,7 @@ iframe {
   height: 35%;
 }
 
-.main-date object {
+.main-date img {
   max-height:100%;
   max-width:100%;
   margin: auto;
@@ -101,21 +101,21 @@ iframe {
   display: block;
 }
 
-.cloud-holder{
+.main-days
+{
   position: absolute;
-  top: 50px;
-  right: 50px;
-  padding: 20px;
-  max-width: 150px;
-  max-height: 75px;
-  background-image: url("../img/cloud.svg");
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-  color: #000;
-    animation: fly 10s ease infinite;
+  right: 10px;
+  top: 10px;
+  width: 35%;
+  height: 35%;
+}
+
+.main-days img {
+  max-height:100%;
+  max-width:100%;
+  margin: auto;
+  display: block;
+}
 }
 
 @keyframes fly {

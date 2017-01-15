@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="115.85309mm"
@@ -34,9 +35,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="4.3494586"
-     inkscape:cy="85.883286"
+     inkscape:zoom="1.4"
+     inkscape:cx="89.439519"
+     inkscape:cy="77.006887"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -147,25 +148,37 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="290.46811"
-       y="441.92526"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text10529"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan10531"
-         x="290.46811"
-         y="441.92526">Prueba</tspan></text>
+       sodipodi:linespacing="125%"
+       y="2"
+       transform="translate(28,2)"><textPath
+         xlink:href="#path4163"
+         id="textPath4165"><tspan
+   id="tspan10531"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Quedan</tspan></textPath></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="283.32523"
-       y="497.63953"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text10533"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan10535"
-         x="283.32523"
-         y="497.63953">Fus</tspan></text>
+       sodipodi:linespacing="125%"
+       y="2"
+       transform="translate(26,2)"><textPath
+         xlink:href="#path4168"
+         id="textPath4170"><tspan
+   id="tspan10535"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Horas</tspan></textPath></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 265.4681,447.63953 c 143.04315,6.67717 212.90017,30.97659 316.42857,23.57143"
+       id="path4163"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 218.32524,509.78239 c 121.8598,-8.3848 238.91975,29.29142 355.71429,24.28572"
+       id="path4168"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>
