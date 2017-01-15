@@ -13,7 +13,7 @@
     src: url(../fonts/Typo_Round_Light_Demo.otf);
 }
 @font-face {
-    font-family: typo;
+    font-family: "Freestyle Script";
     src: url(../fonts/FREESCPT.ttf);
 }
 
@@ -219,12 +219,8 @@ fieldset[disabled] .btn-sample.active {
 
 .main-row{
   min-height: calc(100vh - 50px);
-  background-image: url("../img/chalkboard-black.jpg");
-  background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  background-image: url("../img/black-tile.png");
+
     padding-bottom: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 30px black;
