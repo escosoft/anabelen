@@ -79,8 +79,10 @@ body{
 }
 
 .main-header{
+  position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 100%;
 }
 .mycarousel{
   position: absolute;
@@ -90,6 +92,7 @@ body{
   height: 100%;
 }
 
+.carousel-wrapper,
 .mySlides{
     height: 100%;
 }
