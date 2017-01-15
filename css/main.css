@@ -1,6 +1,6 @@
 @font-face {
     font-family: pizarra;
-    src: url(../font/KGSecondChancesSketch.ttf);
+    src: url(../fonts/KGSecondChancesSketch.ttf);
 }
 
 @font-face {
@@ -69,84 +69,134 @@ iframe {
     letter-spacing: 4px;
 }
 
-.main-date
-{
+html,
+body{
+    height: 100%;
+}
+
+.main-header{
+  height: calc(100vh - 50px);
+}
+
+.mycarousel{
   position: absolute;
-  left: 10px;
-  top: 10px;
-  width: 35%;
-  height: 35%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides{
+    height: 100%;
+}
+
+.mySlides{
+    width: 100%;
+    height: 100%;  
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.main-entrance-row{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 44px);
+}
+
+.banderas{
+  margin: auto;
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
+
+.main-date{
+  position: absolute;
+  height: 100%;
+  width: 25%;
 }
 
 .main-date img {
+  position: absolute;
+  top: 0;
   max-height:100%;
   max-width:100%;
   margin: auto;
   display: block;
 }
 
-.main-entrance
-{
+.main-entrance {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  left: 10%;
+  top: 2%;
+  height: 98%;
+  width: 80%;
 }
 
 .main-entrance img {
-  padding-top: 5%;
-  height:90%;
-  max-width:100%;
-  margin: auto;
-  display: block;
-}
-
-.main-days
-{
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 35%;
-  height: 35%;
-}
-
-.main-days img {
   max-height:100%;
   max-width:100%;
   margin: auto;
   display: block;
 }
+
+.main-days{
+  position: absolute;
+  top: 0;
+  left: 75%;
+  height: 100%;
+  width: 25%;
+}
+.main-days object {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height:100%;
+  max-width:100%;
+  margin: auto;
+  display: block;
 }
 
-@keyframes fly {
-    20%  {
-          -webkit-transform: translate(-30px,30px);
-    -moz-transform: translate(-30px,30px);
-    -o-transform: translate(-30px,30px);
-    -ms-transform: translate(-30px,30px);
-    transform: translate(-30px,30px);
-    }
-    40%  {
-          -webkit-transform: translate(-30px,30px);
-    -moz-transform: translate(-30px,30px);
-    -o-transform: translate(-30px,30px);
-    -ms-transform: translate(-30px,30px);
-    transform: translate(-30px,30px);
-    }
-    60%  {
-          -webkit-transform: translate(-30px,30px);
-    -moz-transform: translate(-30px,30px);
-    -o-transform: translate(-30px,30px);
-    -ms-transform: translate(-30px,30px);
-    transform: translate(-30px,30px);
-    }
-    80% {
-          -webkit-transform: translate(-30px,30px);
-    -moz-transform: translate(-30px,30px);
-    -o-transform: translate(-30px,30px);
-    -ms-transform: translate(-30px,30px);
-    transform: translate(-30px,30px);
-    }
+
+@media only screen and (max-width: 768px) {
+
+.banderas{
+  max-width: 80%;
+}
+.main-date{
+  position: absolute;
+  height: 30%;
+  width: 50%;
+  top: 70%;
+}
+
+.main-entrance {
+  position: absolute;
+  left: 0;
+  top: 2%;
+  height: 68%;
+  width: 100%;
+}
+
+.main-days{
+  position: absolute;
+  height: 30%;
+  width: 50%;
+  top: 70%;
+  left: 50%;
+}
+
 }
 
 .shadow{
@@ -159,19 +209,55 @@ iframe {
 .controls
 {
   position: absolute;
-  top: 90%;
+  bottom: 10px;
   width: 100%;
 }
 
-.controls-panel
-{
-  margin: auto; 
-}
 
-.carousel-indicators {
-  bottom: 5px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #7f463c; 
+  border-color: #7f463c; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #FFFFFF; 
+  background-color: #ff9e7a; 
+  border-color: #7f463c; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #7f463c; 
+  border-color: #7f463c; 
+} 
+ 
+.btn-sample .badge { 
+  color: #7f463c; 
+  background-color: #FFFFFF; 
 }
 
 .thumbnail{
