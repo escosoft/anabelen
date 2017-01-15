@@ -128,17 +128,19 @@ body{
 
 #portada{width: 100%;}
 
-@media only screen and (max-width: 768px) {
-
-.banderas{
-  margin: auto;
-  max-width: 80%;
-  height: auto;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 10%;
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .col-xxs-12{
+        width: 100%;
+    }.col-xxs-6{
+        width: 50%;
+    }
+    .xxs-bottom{
+      padding-top: 20%;
+      max-height: 60%;
+    }
 }
+
 .shadow{
   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,Color='#444')";
   filter: url(#drop-shadow);
