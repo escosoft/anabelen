@@ -97,7 +97,7 @@
             </div>
         </div>
         <!-- Logo -->
-        <div class="main-entrance-row">
+<!--         <div class="main-entrance-row">
             <div class="main-entrance">
                 <img alt="Entrada" class="shadow" src="img/portada.svg">
             </div>
@@ -109,23 +109,44 @@
                         No SVG support
                 </object>
             </div>
-            <img alt="banderas" class="banderas shadow" src="img/banderas.svg">
+        </div> -->
+        <div class="row main-entrance-row">
+            <div class="col-xs-4 col-lg-3 col-lg-offset-1">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img alt="Entrada" class="shadow img-responsive" src="img/calendario-portada.svg">
+                    </div>
+                    <div class="col-xs-12">
+                        <object id="date" class="shadow img-responsive" data="img/days.svg" type="image/svg+xml">
+                            No SVG support
+                        </object>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8 col-lg-6 col-lg-offset-1">
+                <img alt="Entrada" class="shadow img-responsive" id="portada" src="img/portada.svg">
+            </div>
+        </div>
+        <div class="row">
+        <div class="col-xs-12">
+                            <div class="text-center controls">
+                    <div aria-label="..." class="btn-group text-center" role="group">
+                        <a href="#" class="btn btn-sample" onclick="plusDivs(-1)" role="button">❮ Prev</a>
+                    </div>
+                    <div aria-label="..." class="btn-group text-center" role="group">
+                        <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(1)" role="button">0</a>
+                        <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(2)" role="button">1</a>
+                        <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(3)" role="button">2</a>
+                        <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(4)" role="button">3</a>
+                    </div>
+                    <div aria-label="..." class="btn-group text-center" role="group">
+                        <a href="#" class="btn btn-sample" onclick="plusDivs(1)" role="button">Next ❯</a>
+                    </div>
+                </div>
+                </div>
         </div>
         <!-- Controls -->
-        <div class="text-center controls">
-            <div aria-label="..." class="btn-group text-center" role="group">
-                <a href="#" class="btn btn-sample" onclick="plusDivs(-1)" role="button">❮ Prev</a>
-            </div>
-            <div aria-label="..." class="btn-group text-center" role="group">
-                <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(1)" role="button">0</a>
-                <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(2)" role="button">1</a>
-                <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(3)" role="button">2</a>
-                <a href="#" class="btn btn-sample btn-marker" onclick="currentDiv(4)" role="button">3</a>
-            </div>
-            <div aria-label="..." class="btn-group text-center" role="group">
-                <a href="#" class="btn btn-sample" onclick="plusDivs(1)" role="button">Next ❯</a>
-            </div>
-        </div>
+
     </header>
     <div class="container main-row" id="welcome">
         <div class="row">
