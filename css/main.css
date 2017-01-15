@@ -12,6 +12,10 @@
     font-family: typo;
     src: url(../fonts/Typo_Round_Light_Demo.otf);
 }
+@font-face {
+    font-family: typo;
+    src: url(../fonts/FREESCPT.ttf);
+}
 
 
 body {
@@ -74,6 +78,10 @@ body{
     height: 100%;
 }
 
+.main-header{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .mycarousel{
   position: absolute;
   top: 0;
@@ -103,12 +111,6 @@ body{
     -o-background-size: cover;
 }
 
-
-.main-entrance-row{
-  position: relative;
-  width: 100%;
-  height: calc(100% - 44px);
-}
 
 .banderas{
   top: 0;
