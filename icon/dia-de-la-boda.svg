@@ -1,58 +1,155 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<circle style="fill:#273B7A;" cx="256" cy="256" r="256"/>
-<path style="fill:#121149;" d="M142.222,369.778l140.803,140.803c122.69-12.874,219.564-112.404,228.316-236.277L350.815,113.778
-	l-6.175,36.492l-36.492-36.492l-6.68,35.987l-35.987-35.987l-7.737,34.93l-34.93-34.93l-7.559,35.107l-35.107-35.107l-9.481,40.655
-	L142.222,369.778z"/>
-<rect x="142.222" y="170.667" style="fill:#FFFFFF;" width="227.556" height="199.111"/>
-<rect x="255.431" y="170.667" style="fill:#D0D1D3;" width="114.347" height="199.111"/>
-<rect x="142.222" y="142.222" style="fill:#FF7F4F;" width="227.556" height="56.889"/>
-<rect x="255.431" y="142.222" style="fill:#D35933;" width="114.347" height="56.889"/>
-<path style="fill:#FF6262;" d="M187.733,267.378c0-23.617,15.282-34.133,34.133-34.133S256,248.527,256,267.378
-	c0-18.851,15.282-34.133,34.133-34.133s34.133,14.653,34.133,34.133c0,47.752-68.267,73.956-68.267,73.956
-	S187.733,315.475,187.733,267.378z"/>
-<path style="fill:#FF314F;" d="M290.133,233.244c-18.851,0-34.133,15.282-34.133,34.133c0-2.084-0.215-4.115-0.574-6.096v79.827
-	c0.369,0.147,0.574,0.226,0.574,0.226s68.267-26.203,68.267-73.956C324.267,247.898,308.984,233.244,290.133,233.244z"/>
-<g>
-	<rect x="161.185" y="113.778" style="fill:#FFC61B;" width="18.963" height="56.889"/>
-	<rect x="203.852" y="113.778" style="fill:#FFC61B;" width="18.963" height="56.889"/>
-	<rect x="246.519" y="113.778" style="fill:#FFC61B;" width="18.963" height="56.889"/>
-</g>
-<g>
-	<rect x="255.431" y="113.778" style="fill:#EAA22F;" width="10.056" height="56.889"/>
-	<rect x="289.185" y="113.778" style="fill:#EAA22F;" width="18.963" height="56.889"/>
-	<rect x="331.852" y="113.778" style="fill:#EAA22F;" width="18.963" height="56.889"/>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 407.86441 407.86441"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dia-de-la-boda.svg"
+   width="407.86441"
+   height="407.86441"><metadata
+     id="metadata7269"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs7267" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview7265"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="203.93221"
+     inkscape:cy="189.71021"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" /><circle
+     style="fill:#ead92a;fill-opacity:0.54509807"
+     cx="203.93221"
+     cy="203.93221"
+     r="203.93221"
+     id="circle4793" /><g
+     id="g7820"
+     transform="translate(-52.067795,-37.845795)"><rect
+       id="rect7207"
+       height="199.11099"
+       width="227.556"
+       style="fill:#ffffff"
+       y="170.66701"
+       x="142.222" /><rect
+       id="rect7209"
+       height="199.11099"
+       width="114.347"
+       style="fill:#d0d1d3"
+       y="170.66701"
+       x="255.431" /><rect
+       id="rect7211"
+       height="56.889"
+       width="227.556"
+       style="fill:#ff7f4f"
+       y="142.222"
+       x="142.222" /><rect
+       id="rect7213"
+       height="56.889"
+       width="114.347"
+       style="fill:#d35933"
+       y="142.222"
+       x="255.431" /><path
+       id="path7215"
+       d="m 187.733,267.378 c 0,-23.617 15.282,-34.133 34.133,-34.133 18.851,0 34.134,15.282 34.134,34.133 0,-18.851 15.282,-34.133 34.133,-34.133 18.851,0 34.133,14.653 34.133,34.133 0,47.752 -68.267,73.956 -68.267,73.956 0,0 -68.266,-25.859 -68.266,-73.956 z"
+       style="fill:#ff6262"
+       inkscape:connector-curvature="0" /><path
+       id="path7217"
+       d="m 290.133,233.244 c -18.851,0 -34.133,15.282 -34.133,34.133 0,-2.084 -0.215,-4.115 -0.574,-6.096 l 0,79.827 c 0.369,0.147 0.574,0.226 0.574,0.226 0,0 68.267,-26.203 68.267,-73.956 0,-19.48 -15.283,-34.134 -34.134,-34.134 z"
+       style="fill:#ff314f"
+       inkscape:connector-curvature="0" /><g
+       id="g7219"><rect
+         id="rect7221"
+         height="56.889"
+         width="18.962999"
+         style="fill:#ffc61b"
+         y="113.778"
+         x="161.185" /><rect
+         id="rect7223"
+         height="56.889"
+         width="18.962999"
+         style="fill:#ffc61b"
+         y="113.778"
+         x="203.85201" /><rect
+         id="rect7225"
+         height="56.889"
+         width="18.962999"
+         style="fill:#ffc61b"
+         y="113.778"
+         x="246.519" /></g><g
+       id="g7227"><rect
+         id="rect7229"
+         height="56.889"
+         width="10.056"
+         style="fill:#eaa22f"
+         y="113.778"
+         x="255.431" /><rect
+         id="rect7231"
+         height="56.889"
+         width="18.962999"
+         style="fill:#eaa22f"
+         y="113.778"
+         x="289.185" /><rect
+         id="rect7233"
+         height="56.889"
+         width="18.962999"
+         style="fill:#eaa22f"
+         y="113.778"
+         x="331.85199" /></g></g><g
+     id="g7235"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7237"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7239"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7241"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7243"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7245"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7247"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7249"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7251"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7253"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7255"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7257"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7259"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7261"
+     transform="translate(-52.067795,-37.845795)" /><g
+     id="g7263"
+     transform="translate(-52.067795,-37.845795)" /></svg>

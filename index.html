@@ -73,7 +73,7 @@
             </div>
         </div>
     </nav>
-    <header class="carousel">
+    <header class="carousel" id="myPage">
         <!-- Wrapper for Slides -->
         <div class="item mySlides">
             <!-- Set the first background image using inline CSS below. -->
@@ -91,8 +91,8 @@
             <!-- Set the third background image using inline CSS below. -->
             <div class="fill" style="background-image:url('img/madrid.jpg');"></div>
         </div><!-- Logo -->
-        <div class="main-text-ext"><img alt="Entrada" class="shadow" src="img/portada.svg"></div><!-- Fecha -->
-        <div class="main-data"><img alt="Entrada" class="shadow" src="img/fecha.svg"></div><!-- Controls -->
+        <div class="main-entrance"><img alt="Entrada" class="shadow" src="img/portada.svg"></div><!-- Fecha -->
+        <div class="main-date"><img alt="Entrada" class="shadow" src="img/fecha.svg"></div><!-- Controls -->
         <div class="text-center controls">
             <div aria-label="..." class="btn-group text-center" role="group">
                 <button class="btn btn-default" onclick="plusDivs(-1)" type="button">❮ Prev</button>
@@ -105,6 +105,9 @@
             </div>
         </div>
         <div class="cloud-holder">
+            <object id="date" class="shadow" data="img/days.svg" type="image/svg+xml">
+                    No SVG support
+            </object>
             <p id="days">Quedan</p>
             <p id="hour">Quedan</p>
         </div>
@@ -118,7 +121,10 @@
                 <p class="text-center">No es broma, de verdad. ¡Nos casamos!</p>
                 <p>Y si estás leyendo esto es porque queremos que tú también seas cómplice de uno de los días más señalados en nuestra ya consolidada relación, ¡nuestra boda! Por eso hemos querido crear esta web para manteneros informados de todos los detalles importantes que os pueden ser de utilidad.</p>
                 <p>Os animamos a que os deis un paseo por la página y no olvidéis pasaros de vez en cuando por nuestro blog, que será donde iremos colgando las novedades que os harán partícipes de este proceso de elaboración. Además, si ya tenéis clara vuestra presencia o ausencia, confirmadlo en la pestaña correspondiente para hacernos más fácil la organización.</p>
-                <p>Queremos que nuestra boda sea un día de celebración y de mucha diversión, así que estamos abiertos a sugerencias y os dejamos que tengáis iniciativa propia si queréis aportar algo o sorprendernos de cualquier manera.</p>
+                <p>Queremos que nuestra boda sea un día de celebración y de mucha diversión, así que estamos abiertos a sugerencias y os dejamos que tengáis iniciativa propia si queréis aportar algo o sorprendernos de cualquier manera. Una idea que os ofrecemos es añadir vuestras canciones a la lista de reproducción de Spotify que hemos creado para la boda.</p>
+                <p class="text-center">
+                    <a href="https://open.spotify.com/user/escolara17/playlist/7JAUsFvOXS10PehZL6SZdN"><img src="icon/spotify.svg" alt="Spotify" target="_blank" style="width:auto;height:2em;border:0;"></a>
+                </p>
                 <p class="text-center">¡Un beso muy grande!<br>
                 Luis y Ana Belén</p>
             </div>
@@ -163,7 +169,8 @@
             </div>
             <div class="col-sm-2 col-xs-6">
                 <div class="thumbnail">
-                    <img alt="" border="0" onmouseout="this.src='icon/vestido-de-boda.svg '" onmouseover="this.src='icon/esmoquin.svg'" src="icon/vestido-de-boda.svg">
+                    <img class="alternate" alt="" src="icon/vestido-de-boda.svg">
+                    <img class="alternate" alt="" src="icon/esmoquin.svg">
                     <div class="caption">
                         <h3>Etiqueta</h3>
                         <p>Eres 100% libre, pero evita el blanco</p>
@@ -190,11 +197,11 @@
         </div>
         <div class="row">
             <div class="col-sm-offset-2 col-sm-4">
-                <h4>LUIS</h4>
+                <h3>LUIS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
             </div>
             <div class="col-sm-4">
-                <h4>ANA BELÉN</h4>
+                <h3>ANA BELÉN</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
             </div>
         </div>
@@ -286,13 +293,13 @@
         <div class="row">
             <div class="col-sm-6">
                 <h3>Mapa</h3>
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive embed-responsive-16by9 shadow">
                     <iframe allowfullscreen class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3090.2693025873846!2d-3.315814684994664!3d39.2367579795197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6909a6ad15a873%3A0x46a5aa5f226ed2b1!2sQuinta+Monteguerra!5e0!3m2!1ses!2ses!4v1483898639292"></iframe>
                 </div>
             </div>
             <div class="col-sm-6">
                 <h3>Vídeo</h3>
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive embed-responsive-16by9 shadow">
                     <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube.com/embed/NUoh9qKaFiE"></iframe>
                 </div>
             </div>
@@ -344,201 +351,211 @@
         </div>
     </div>
     <div class="container main-row" id="hotels">
-        <h2 class="text-center">HOTELES</h2>
-        <p>Este sección va dirigida a todos los que venís de fuera de Tomelloso y necesitáis alojamiento para recuperaros de la boda y de la preboda (el viernes 16 organizaremos algo para todos los que ya estéis por allí). Para facilitaros la logística hemos bloqueado habitaciones en tres hoteles, dos de ellos al completo, ya que de esta manera tendréis un buen descuento cortesía de la Mancha. La reserva la podéis hacer tanto para el fin de semana completo como para el sábado exclusivamente. Es muy importante que para beneficiaros del descuento la reserva la hagáis a través del teléfono directo del hotel indicando que vais a la boda de Luis y Ana Belén. El bloqueo de las habitaciones a nombre de nuestra boda dura hasta finales de abril, a partir de entonces no se aplicaría el descuento. Existen otros hoteles y apartamentos turísticos en la ciudad aparte de los que hemos reservado y también existe la posibilidad de buscar alojamiento en Alcázar de San Juan, ya que dispone de estación de tren muy bien comunicada, aunque en principio no contemplamos que la ruta del autobús pase por allí.</p>
-        <ul class="nav nav-tabs">
-            <li class="active">
-                <a data-toggle="tab" href="#ramomar">Hotel Ramomar (***)</a>
-            </li>
-            <li>
-                <a data-toggle="tab" href="#altora">Hotel Altora (***)</a>
-            </li>
-            <li>
-                <a data-toggle="tab" href="#paloma">Hotel Paloma (***)</a>
-            </li>
-            <li>
-                <a data-toggle="tab" href="#otherhotels">Otros Hoteles</a>
-            </li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade in active" id="ramomar">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img alt="Ramomar" class="img-responsive" src="img/ramomar.jpg">
-                        <div class="google-maps">
-                            <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713" style="border:0"></iframe>
-                        </div>
+        <div class="row">
+            <h2 class="text-center">HOTELES</h2>
+        </div> 
+        <div class="row">
+            <div class="col-sm-8 text-justify col-sm-offset-2">
+                <p>Este sección va dirigida a todos los que venís de fuera de Tomelloso y necesitáis alojamiento para recuperaros de la boda y de la preboda (el viernes 16 organizaremos algo para todos los que ya estéis por allí). Para facilitaros la logística hemos bloqueado habitaciones en tres hoteles, dos de ellos al completo, ya que de esta manera tendréis un buen descuento cortesía de la Mancha. La reserva la podéis hacer tanto para el fin de semana completo como para el sábado exclusivamente. Es muy importante que para beneficiaros del descuento la reserva la hagáis a través del teléfono directo del hotel indicando que vais a la boda de Luis y Ana Belén. El bloqueo de las habitaciones a nombre de nuestra boda dura hasta finales de abril, a partir de entonces no se aplicaría el descuento. Existen otros hoteles y apartamentos turísticos en la ciudad aparte de los que hemos reservado y también existe la posibilidad de buscar alojamiento en Alcázar de San Juan, ya que dispone de estación de tren muy bien comunicada, aunque en principio no contemplamos que la ruta del autobús pase por allí.</p>
+            </div> 
+        </div> 
+        <div class="row">
+            <div class="col-xs-12 shadow">
+                <div class="panel with-nav-tabs panel-default">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#ramomar">H*** Ramomar</a></li>
+                            <li><a data-toggle="tab" href="#altora">H*** Altora</a></li>
+                            <li><a data-toggle="tab" href="#paloma">H*** Paloma</a></li>
+                            <li><a data-toggle="tab" href="#otherhotels">Otros Hoteles</a></li>
+                        </ul>
                     </div>
-                    <div class="col-sm-6">
-                        <h4>General</h4>
-                        <p>Está situado muy cerca de la Plaza de Toros, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
-                        <p>El hotel dispone de 42 habitaciones, distribuidas en 30 habitaciones dobles y 12 individuales. En algunas habitaciones dobles se puede disponer de una cama supletoria o cuna, bajo petición al realizar la reserva. También dispone de habitaciones familiares, con capacidad para 4 personas, así como <strong>parking subterráneo y piscina exterior.</strong></p>
-                        <p>HOTEL RAMOMAR***<br>
-                        C/ CONCORDIA, 17<br>
-                        13.700 – TOMELLOSO (C.REAL)<br>
-                        Telef. 926 505 994<br>
-                        Fax. 926 505 365<br>
-                        Web: <a href="http://www.hotelramomar.com/" target="_blank">www.hotelramomar.com</a><br>
-                        Mail: reservas@hotelramomar.com</p>
-                        <h4>Precios</h4>
-                        <h5>Habitación Individual</h5>
-                        <ul>
-                            <li>Solo Alojamiento: 32 EUROS</li>
-                            <li>Alojam. + desayuno: 36 EUROS</li>
-                        </ul>
-                        <h5>Habitación Doble</h5>
-                        <ul>
-                            <li>Solo Alojamiento: 40 EUROS</li>
-                            <li>Alojam. + desayuno: 48 EUROS</li>
-                        </ul>
-                        <h4>Notas</h4>
-                        <ul>
-                            <li>Precios por día y con IVA INCLUIDO, en el régimen indicado.</li>
-                            <li>Las reservas se tendrán que hacer directamente con el hotel, a través de teléfono directo 926 505 994, o mediante correo electrónico a la dirección reservas@hotelramomar.com.</li>
-                            <li>Política de cancelación: las habitaciones reservadas se podrán cancelar o modificar sin coste alguno como máximo un mes antes de la fecha de la reserva. Pasada esa fecha, el coste de cancelación o modificación será de una noche.</li>
-                            <li>Cuando realicen la reserva se pedirá un número de tarjeta de crédito y su caducidad como garantía de la misma.</li>
-                        </ul>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="ramomar">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="thumbnail"><img alt="Ramomar" class="img-rounded" src="img/ramomar.jpg" style="width:100%"></div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3>General</h3>
+                                        <p>Está situado muy cerca de la Plaza de Toros, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
+                                        <p>El hotel dispone de 42 habitaciones, distribuidas en 30 habitaciones dobles y 12 individuales. En algunas habitaciones dobles se puede disponer de una cama supletoria o cuna, bajo petición al realizar la reserva. También dispone de habitaciones familiares, con capacidad para 4 personas, así como <strong>parking subterráneo y piscina exterior.</strong></p>
+                                        <p>HOTEL RAMOMAR***<br>
+                                        C/ CONCORDIA, 17<br>
+                                        13.700 – TOMELLOSO (C.REAL)<br>
+                                        Telef. 926 505 994<br>
+                                        Fax. 926 505 365<br>
+                                        Web: <a href="http://www.hotelramomar.com/" target="_blank">www.hotelramomar.com</a><br>
+                                        Mail: reservas@hotelramomar.com</p>
+                                        <h4>Precios</h4>
+                                        <h5>Habitación Individual</h5>
+                                        <ul>
+                                            <li>Solo Alojamiento: 32 EUROS</li>
+                                            <li>Alojam. + desayuno: 36 EUROS</li>
+                                        </ul>
+                                        <h5>Habitación Doble</h5>
+                                        <ul>
+                                            <li>Solo Alojamiento: 40 EUROS</li>
+                                            <li>Alojam. + desayuno: 48 EUROS</li>
+                                        </ul>
+                                        <h4>Notas</h4>
+                                        <ul>
+                                            <li>Precios por día y con IVA INCLUIDO, en el régimen indicado.</li>
+                                            <li>Las reservas se tendrán que hacer directamente con el hotel, a través de teléfono directo 926 505 994, o mediante correo electrónico a la dirección reservas@hotelramomar.com.</li>
+                                            <li>Política de cancelación: las habitaciones reservadas se podrán cancelar o modificar sin coste alguno como máximo un mes antes de la fecha de la reserva. Pasada esa fecha, el coste de cancelación o modificación será de una noche.</li>
+                                            <li>Cuando realicen la reserva se pedirá un número de tarjeta de crédito y su caducidad como garantía de la misma.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="altora">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="thumbnail"><img alt="Altora" class="img-responsive" src="img/altora.jpg" style="width:100%"></div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.661943129655!2d-3.0220086846418743!3d39.15966997953096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7f0272c05f%3A0x9df49e29a70ab407!2sHOTEL+ALTORA!5e0!3m2!1ses!2ses!4v1483646691472"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3>General</h3>
+                                        <p>Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
+                                        <p>HOTEL ALTORA (***)<br>
+                                        C/ Rvdo Padre Pedro, 2<br>
+                                        13700 Tomelloso - Ciudad Real<br>
+                                        Teléfono: 926 51 07 25<br>
+                                        Web: <a href="http://www.hotelaltora.es/" target="_blank">www.hotelaltora.es</a><br>
+                                        Email: info@hotelaltora.es o reservas@hotelaltora.es</p>
+                                        <h4>Precios</h4>
+                                        <h5>Habitación Individual</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 38'25€</li>
+                                            <li>Alojamiento + desayuno: 42'50 €</li>
+                                        </ul>
+                                        <h5>Habitación Doble</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 46'75 €</li>
+                                            <li>Alojamiento + desayuno: 55'25 €</li>
+                                        </ul>
+                                        <h5>Habitación Triple</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 72'25 €</li>
+                                            <li>Alojamiento + desayuno: 59,5 €</li>
+                                        </ul>
+                                        <h4>Notas</h4>
+                                        <ul>
+                                            <li>16 habitaciones personalizadas distribuidas en 3 plantas, 5 triples y 11 que pueden tener uso doble o individual.</li>
+                                            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+                                            <li>Cunas a disposición de los clientes sin coste añadido y la posibilidad de montar una cama supletoria en la habitación (precio según tarifa).</li>
+                                            <li>El hotel tiene a disposición de todos los clientes una sala de estar en primera planta con terraza, gimnasio, sala de juegos para los más pequeños, wifi gratuito y cafetería dónde podrá degustar platos típicos de la zona.</li>
+                                            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="paloma">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="thumbnail"><img alt="Paloma" class="img-responsive" src="img/paloma.jpg" style="width:100%"></div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.6903059441465!2d-3.024030984641909!3d39.15902497953111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7e653bf635%3A0x58412506de954b0d!2sHOTEL+PALOMA+TOMELLOSO!5e0!3m2!1ses!2ses!4v1483647553903"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3>General</h3>
+                                        <p>Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
+                                        <p>HOTEL PALOMA (***)<br>
+                                        C/ Campo, 12<br>
+                                        13700 Tomelloso - Ciudad Real<br>
+                                        Tel: 926 513 300 - 926 513 304<br>
+                                        Fax: 926 513 308<br>
+                                        Web: <a href="http://www.hotelpalomatomelloso.es/" target="_blank">www.hotelpalomatomelloso.es</a><br>
+                                        Email: info@hotelpalomatomelloso.es</p>
+                                        <h4>Precios</h4>
+                                        <h5>Habitación Individual</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 44€ (43€ con descuento)</li>
+                                            <li>Alojamiento + desayuno: 49€ (46€ con descuento)</li>
+                                        </ul>
+                                        <h5>Habitación Doble</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 55€ (50€ con descuento)</li>
+                                            <li>Alojamiento + desayuno: 65€ (60€ con descuento)</li>
+                                        </ul>
+                                        <h5>Habitación Triple</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 70€</li>
+                                            <li>Alojamiento + desayuno: 80€ (75€ con descuento)</li>
+                                        </ul>
+                                        <h5>Habitación Cuádruple</h5>
+                                        <ul>
+                                            <li>Solo alojamiento: 90 € (85€ con descuento)</li>
+                                            <li>Alojamiento + desayuno: 80€</li>
+                                        </ul>
+                                        <h4>Notas</h4>
+                                        <ul>
+                                            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
+                                            <li>Cunas a disposición de los clientes sin coste añadido.</li>
+                                            <li>- En habitaciones con camas supletorias gratuitidad para el primer niño menor de 12 años.</li>
+                                            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="otherhotels">
+                                <p>En este apartado hemos incluido otros hoteles de la zona para aquellos invitados que decidan alojarse fuera de Tomelloso. Los precios son los habituales que ofrecen los propios hoteles, sin descuento adicional por la boda.</p>
+                                <ul>
+                                    <li>
+                                        <strong><u>Alc&aacute;zar de San Juan</u></strong>
+                                        <ul>
+                                            <li>Hotel Convento de Santa Clara
+                                                <ul>
+                                                    <li>
+                                                        <a href="http://www.booking.com/hotel/es/husa-convento-de-santa-clara.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=9689501_88196491_0_2_0;checkin=2017-06-16;checkout=2017-06-" target="_blank">Booking</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://hotelconventostaclara.com/" target="_blank">P&aacute;gina propia</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>Hotel Intur Alc&aacute;zar de San Juan
+                                                <ul>
+                                                    <li>
+                                                        <a href="http://www.booking.com/hotel/es/intur-alcazar-de-san-juan.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=9196104_89610762_0_2_0;checkin=2017-06-16;checkout=2017-06-18;" target="_blank">Booking</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.hotelinturalcazardesanjuan.es/" target="_blank">P&aacute;gina propia</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong><u>Manzanares</u></strong>
+                                        <ul>
+                                            <li>Parador de Manzanares
+                                                <ul>
+                                                    <li>
+                                                        <a href="http://www.booking.com/hotel/es/parador-de-turismo-manzanares.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=1473501_91452214_0_2_0;checkin=2017-06-16;checkout=2017-06" target="_blank">Booking</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.parador.es/es/paradores/parador-de-manzanares" target="_blank">P&aacute;gina propia</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="altora">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img alt="Altora" class="img-responsive" src="img/altora.jpg">
-                        <div class="google-maps">
-                            <iframe allowfullscreen height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.661943129655!2d-3.0220086846418743!3d39.15966997953096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7f0272c05f%3A0x9df49e29a70ab407!2sHOTEL+ALTORA!5e0!3m2!1ses!2ses!4v1483646691472" style="border:0" width="400"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>General</h4>
-                        <p>Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
-                        <p>HOTEL ALTORA (***)<br>
-                        C/ Rvdo Padre Pedro, 2<br>
-                        13700 Tomelloso - Ciudad Real<br>
-                        Teléfono: 926 51 07 25<br>
-                        Web: <a href="http://www.hotelaltora.es/" target="_blank">www.hotelaltora.es</a><br>
-                        Email: info@hotelaltora.es o reservas@hotelaltora.es</p>
-                        <h4>Precios</h4>
-                        <h5>Habitación Individual</h5>
-                        <ul>
-                            <li>Solo alojamiento: 38'25€</li>
-                            <li>Alojamiento + desayuno: 42'50 €</li>
-                        </ul>
-                        <h5>Habitación Doble</h5>
-                        <ul>
-                            <li>Solo alojamiento: 46'75 €</li>
-                            <li>Alojamiento + desayuno: 55'25 €</li>
-                        </ul>
-                        <h5>Habitación Triple</h5>
-                        <ul>
-                            <li>Solo alojamiento: 72'25 €</li>
-                            <li>Alojamiento + desayuno: 59,5 €</li>
-                        </ul>
-                        <h4>Notas</h4>
-                        <ul>
-                            <li>16 habitaciones personalizadas distribuidas en 3 plantas, 5 triples y 11 que pueden tener uso doble o individual.</li>
-                            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
-                            <li>Cunas a disposición de los clientes sin coste añadido y la posibilidad de montar una cama supletoria en la habitación (precio según tarifa).</li>
-                            <li>El hotel tiene a disposición de todos los clientes una sala de estar en primera planta con terraza, gimnasio, sala de juegos para los más pequeños, wifi gratuito y cafetería dónde podrá degustar platos típicos de la zona.</li>
-                            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="paloma">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img alt="Paloma" class="img-responsive" src="img/paloma.jpg">
-                        <div class="google-maps">
-                            <iframe allowfullscreen height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.6903059441465!2d-3.024030984641909!3d39.15902497953111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc7e653bf635%3A0x58412506de954b0d!2sHOTEL+PALOMA+TOMELLOSO!5e0!3m2!1ses!2ses!4v1483647553903" style="border:0" width="600"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <h4>General</h4>
-                        <p>Está situado muy cerca de la plaza del Ayuntamiento, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
-                        <p>HOTEL PALOMA (***)<br>
-                        C/ Campo, 12<br>
-                        13700 Tomelloso - Ciudad Real<br>
-                        Tel: 926 513 300 - 926 513 304<br>
-                        Fax: 926 513 308<br>
-                        Web: <a href="http://www.hotelpalomatomelloso.es/" target="_blank">www.hotelpalomatomelloso.es</a><br>
-                        Email: info@hotelpalomatomelloso.es</p>
-                        <h4>Precios</h4>
-                        <h5>Habitación Individual</h5>
-                        <ul>
-                            <li>Solo alojamiento: 44€ (43€ con descuento)</li>
-                            <li>Alojamiento + desayuno: 49€ (46€ con descuento)</li>
-                        </ul>
-                        <h5>Habitación Doble</h5>
-                        <ul>
-                            <li>Solo alojamiento: 55€ (50€ con descuento)</li>
-                            <li>Alojamiento + desayuno: 65€ (60€ con descuento)</li>
-                        </ul>
-                        <h5>Habitación Triple</h5>
-                        <ul>
-                            <li>Solo alojamiento: 70€</li>
-                            <li>Alojamiento + desayuno: 80€ (75€ con descuento)</li>
-                        </ul>
-                        <h5>Habitación Cuádruple</h5>
-                        <ul>
-                            <li>Solo alojamiento: 90 € (85€ con descuento)</li>
-                            <li>Alojamiento + desayuno: 80€</li>
-                        </ul>
-                        <h4>Notas</h4>
-                        <ul>
-                            <li>Los precios anteriormente indicados tiene incluido el I.V.A. (10,00%).</li>
-                            <li>Cunas a disposición de los clientes sin coste añadido.</li>
-                            <li>- En habitaciones con camas supletorias gratuitidad para el primer niño menor de 12 años.</li>
-                            <li>Parking vigilado a escasos metros del hotel a disposición de todos los clientes (precio según tarifa).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="otherhotels">
-                <p>En este apartado hemos incluido otros hoteles de la zona para aquellos invitados que decidan alojarse fuera de Tomelloso. Los precios son los habituales que ofrecen los propios hoteles, sin descuento adicional por la boda.</p>
-                <ul>
-                    <li>
-                        <strong><u>Alc&aacute;zar de San Juan</u></strong>
-                        <ul>
-                            <li>Hotel Convento de Santa Clara
-                                <ul>
-                                    <li>
-                                        <a href="http://www.booking.com/hotel/es/husa-convento-de-santa-clara.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=9689501_88196491_0_2_0;checkin=2017-06-16;checkout=2017-06-" target="_blank">Booking</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://hotelconventostaclara.com/" target="_blank">P&aacute;gina propia</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>Hotel Intur Alc&aacute;zar de San Juan
-                                <ul>
-                                    <li>
-                                        <a href="http://www.booking.com/hotel/es/intur-alcazar-de-san-juan.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=9196104_89610762_0_2_0;checkin=2017-06-16;checkout=2017-06-18;" target="_blank">Booking</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.hotelinturalcazardesanjuan.es/" target="_blank">P&aacute;gina propia</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong><u>Manzanares</u></strong>
-                        <ul>
-                            <li>Parador de Manzanares
-                                <ul>
-                                    <li>
-                                        <a href="http://www.booking.com/hotel/es/parador-de-turismo-manzanares.es.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaEaIAQGYAQq4AQ3IAQzYAQHoAQH4AQuoAgM;sid=50071f733a184109158b2f8bb44ab9ca;all_sr_blocks=1473501_91452214_0_2_0;checkin=2017-06-16;checkout=2017-06" target="_blank">Booking</a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.parador.es/es/paradores/parador-de-manzanares" target="_blank">P&aacute;gina propia</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+
+
         </div>
     </div>
     <div class="container main-row" id="hair">
@@ -696,14 +713,31 @@
     </script> <!-- Script to set time left -->
      
     <script type="text/javascript">
-                    $(document).ready(function() {
-                        $(".fluid-container").css("width", $(window).width()).css("height", $(window).height());
+                    $(window).load(function () {
+
+                    //alert("Document loaded, including graphics and embedded documents (like SVG)");
+                    var a = document.getElementById("date");
+
+                    //get the inner DOM of alpha.svg
+                    var svgDoc = a.contentDocument;
+
+                    //get the inner element by id
+                    var delta = svgDoc.getElementById("delta");
+                    delta.addEventListener("mousedown", function(){ alert('hello world!')}, false);
+                });
+                    $(window).load(function() {
                         var end = new Date('06/17/2017 07:00 PM');
                         var second = 1000;
                         var minute = second * 60;
                         var hour = minute * 60;
                         var day = hour * 24;
-                        var timer;
+                        var timer;     
+                        // Get the Object by ID
+                        var a = document.getElementById("date");       
+                        var svgDoc = a.contentDocument;
+                        // Get one of the SVG items by ID;
+                        var svgItem = svgDoc.getElementById("tspan10531");
+                        svgItem.text("culo");
 
                         function showRemaining() {
                             var now = new Date;
@@ -718,12 +752,36 @@
                             var minutes = Math.floor((distance % hour) / minute);
                             var seconds = Math.floor((distance % minute) / second);
                             $('#days').text(days + " días");
-                            $('#hour').text(hours + " h " + minutes + " m " + seconds);                
+                            $('#hour').text(hours + " h " + minutes + " m " + seconds);
                         }
                         timer = setInterval(showRemaining, 1000);
                     });
                 
                                                                                                                                                                                                                                                                                         
     </script> 
+<!---  Script to alternate between girl/boy-->
+    <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("alternate");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+<script type="text/javascript">
+    $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        $(this).collapse('hide');
+    }
+});
+</script>
 </body>
 </html>

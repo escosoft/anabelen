@@ -1,50 +1,113 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<circle style="fill:#273B7A;" cx="256" cy="256" r="256"/>
-<path style="fill:#121149;" d="M127.016,366.616l144.879,144.879c116.515-7.14,211.965-92.194,234.867-203.731l-199.356-199.93
-	l-24.729,61.442l-62.018-61.442l-13.569,37.733L256,194.56L127.016,366.616z"/>
-<rect x="204.593" y="107.83" style="fill:#FF6262;" width="16.065" height="53.012"/>
-<rect x="291.34" y="107.83" style="fill:#FF314F;" width="16.065" height="53.012"/>
-<path style="fill:#FFFFFF;" d="M256,416.727c74.967,0,94.779-26.774,94.779-26.774s83.535-34.463,28.915-89.615
-	s-86.747-92.638-70.682-115.664c16.065-23.026,4.284-48.728,4.284-48.728S287.058,120.417,256,149.332
-	c-31.058-28.915-57.296-13.386-57.296-13.386s-11.781,25.703,4.284,48.728s-16.063,60.509-70.682,115.664
-	s28.915,89.616,28.915,89.616S181.033,416.727,256,416.727z"/>
-<path style="fill:#D0D1D3;" d="M379.695,300.337c-54.618-55.155-86.747-92.638-70.682-115.664
-	c16.065-23.026,4.284-48.728,4.284-48.728s-26.238-15.529-57.296,13.386v267.395c74.967,0,94.779-26.774,94.779-26.774
-	S434.314,355.492,379.695,300.337z"/>
-<path style="fill:#FF6262;" d="M206.665,193.376c1.47,7.59-0.76,16.398-6.122,26.507h110.911
-	c-5.361-10.109-7.592-18.916-6.122-26.507H206.665z"/>
-<path style="fill:#FF314F;" d="M305.335,193.376H256v26.507h55.455C306.095,209.773,303.864,200.966,305.335,193.376z"/>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 407.86441 407.86441"
+   xml:space="preserve"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="vestido-de-boda.svg"
+   width="407.86441"
+   height="407.86441"><metadata
+     id="metadata4250"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4248" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview4246"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="203.9317"
+     inkscape:cy="210.2107"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><circle
+     style="fill:#73e5e0;fill-opacity:0.5466667"
+     cx="203.93221"
+     cy="203.93221"
+     r="203.93221"
+     id="circle4793" /><g
+     id="g6012"
+     transform="translate(61.710007,49.483704)"><rect
+       id="rect4204"
+       height="53.012001"
+       width="16.065001"
+       style="fill:#ff6262"
+       y="0"
+       x="90.814697" /><rect
+       id="rect4206"
+       height="53.012001"
+       width="16.065001"
+       style="fill:#ff314f"
+       y="0"
+       x="177.56169" /><path
+       inkscape:connector-curvature="0"
+       id="path4208"
+       d="m 142.2217,308.897 c 74.967,0 94.779,-26.774 94.779,-26.774 0,0 83.535,-34.463 28.915,-89.615 -54.62,-55.152 -86.747,-92.638002 -70.682,-115.664002 16.065,-23.026 4.284,-48.728 4.284,-48.728 0,0 -26.238,-15.529 -57.296,13.386 -31.058,-28.915 -57.296003,-13.386 -57.296003,-13.386 0,0 -11.781,25.703 4.284,48.728 16.065003,23.025 -16.063,60.509002 -70.682,115.664002 -54.619,55.155 28.915,89.616 28.915,89.616 0,0 19.812,26.773 94.779003,26.773 z"
+       style="fill:#ffffff" /><path
+       inkscape:connector-curvature="0"
+       id="path4210"
+       d="m 265.9167,192.507 c -54.618,-55.155 -86.747,-92.638002 -70.682,-115.664002 16.065,-23.026 4.284,-48.728 4.284,-48.728 0,0 -26.238,-15.529 -57.296,13.386 l 0,267.395002 c 74.967,0 94.779,-26.774 94.779,-26.774 0,0 83.534,-34.46 28.915,-89.615 z"
+       style="fill:#d0d1d3" /><path
+       inkscape:connector-curvature="0"
+       id="path4212"
+       d="m 92.886697,85.545998 c 1.47,7.59 -0.76,16.398002 -6.122,26.507002 l 110.911003,0 c -5.361,-10.109 -7.592,-18.916002 -6.122,-26.507002 l -98.667003,0 z"
+       style="fill:#ff6262" /><path
+       inkscape:connector-curvature="0"
+       id="path4214"
+       d="m 191.5567,85.545998 -49.335,0 0,26.507002 55.455,0 c -5.36,-10.11 -7.591,-18.917002 -6.12,-26.507002 z"
+       style="fill:#ff314f" /></g><g
+     id="g4216"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4218"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4220"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4222"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4224"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4226"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4228"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4230"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4232"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4234"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4236"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4238"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4240"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4242"
+     transform="translate(-52.068293,-58.346296)" /><g
+     id="g4244"
+     transform="translate(-52.068293,-58.346296)" /></svg>
