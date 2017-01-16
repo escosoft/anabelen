@@ -85,9 +85,6 @@ iframe {
 }
 
 .main-header{
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   height: 100%;
 }
 
@@ -113,7 +110,10 @@ iframe {
 }
 
 
-#portada{width: 100%;}
+#portada{
+  padding-top: 10px;
+  width: 100%;
+}
 
 @media only screen and (max-width: 500px) {
     /* For mobile phones: */
@@ -126,6 +126,11 @@ iframe {
       padding-top: 20%;
       max-height: 60%;
     }
+}
+
+.controls{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .shadow{
