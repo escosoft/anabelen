@@ -101,7 +101,7 @@
             </div>
         </div>
 
-        <div class="row main-entrance-row">
+        <div class="row main-entrance-row fill" id="fondo">
             <div class="col-xs-4 col-lg-3 col-lg-offset-1 col-xxs-12">
                 <div class="row">
                     <div class="col-xs-12 col-xxs-6">
@@ -636,6 +636,7 @@
                   function showDivs(n) {
                         var i;
                         var x = document.getElementsByClassName("mySlides");
+                        var fondo = document.getElementById("fondo");
                         var dots = document.getElementsByClassName("btn-marker");
                         var sample = document.getElementsByClassName("btn-sample");
 
@@ -647,6 +648,7 @@
                         for (i = 0; i < sample.length; i++) {
                          sample[i].className = sample[i].className.replace(" active", "");
                         }
+                        fondo.id = "fondo" + slideIndex;
                         x[slideIndex-1].style.display = "block";  
                         dots[slideIndex-1].className += " active";
                     }

@@ -84,7 +84,23 @@ body{
   padding-bottom: 10px;
   height: 100%;
 }
+
+#fondo1{
+  background-image: none;
+}
+
+#fondo2{
+  background-image:url('img/molino_pan.jpg');
+}
+#fondo3{
+  background-image:url('img/playa_pan.jpg');
+}
+#fondo4{
+  background-image:url('img/madrid.jpg');
+}
+
 .mycarousel{
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
