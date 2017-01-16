@@ -54,7 +54,6 @@ iframe {
   height: auto;
 }
 
-
 #navbar-container{
   padding-top: 0;
   padding-bottom: 0;
@@ -73,9 +72,16 @@ iframe {
     letter-spacing: 4px;
 }
 
-html,
-body{
-    height: 100%;
+#heart {
+  display: inline-block;
+  animation: heartbeat 4s infinite;
+}
+
+
+@keyframes heartbeat {
+  50% {
+    transform: scale( 1.5);
+  }
 }
 
 .main-header{
@@ -85,61 +91,21 @@ body{
   height: 100%;
 }
 
-#fondo1{
-  background-image: none;
-}
-
-#fondo2{
-  background-image:url('img/molino_pan.jpg');
-}
-#fondo3{
-  background-image:url('img/playa_pan.jpg');
-}
-#fondo4{
-  background-image:url('img/madrid.jpg');
-}
-
-.mycarousel{
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-wrapper,
-.mySlides{
-    height: 100%;
-}
-
-.mySlides{
-    width: 100%;
-    height: 100%;  
-}
-
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
-    width: 100%;
-    height: 100%;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+  transition: background 1s linear;
+  -webkit-transition: background 1s linear;
+  -moz-transform:  background 1s linear;
+  -ms-transform:  background 1s linear;
+  -o-transform:  background 1s linear;
 }
 
-
-.banderas{
-  top: 0;
-  margin: auto;
-  max-width: 60%;
-  height: auto;
-  display: block;
-  position: absolute;
-  left: 20%;
-}
 .main-entrance-row img,
 .main-entrance-row object{
   margin: auto;
@@ -168,9 +134,6 @@ body{
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
 }
-
-
-
 
 .btn-sample { 
   color: #FFFFFF; 
@@ -246,20 +209,6 @@ fieldset[disabled] .btn-sample.active {
     border-radius: 25px;
 }
 
-.google-maps {
-  position: relative;
-  padding-bottom: 75%;
-  height: 0;
-  overflow: hidden;
-}
-.google-maps iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
 footer {
   background-color: #2d2d30;
   color: #f5f5f5;
@@ -277,72 +226,6 @@ footer a:hover {
 }
 textarea {
   resize: none;
-}
-
-#heart {
-  position: absolute;
-  left: 80px;
-  width: auto;
-  height: 100%;
-  animation: heartbeat 4s infinite;
-}
-
-#heart:before,
-#heart:after {
-  position: absolute;
-  content: "";
-  left: 25px;
-  top: 0;
-  width: 25px;
-  height: 40px;
-  background: red;
-  -moz-border-radius: 25px 25px 0 0;
-  border-radius: 25px 25px 0 0;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transform-origin: 0 100%;
-  -moz-transform-origin: 0 100%;
-  -ms-transform-origin: 0 100%;
-  -o-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-}
-
-#heart:after {
-  left: 0;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  -ms-transform-origin: 100% 100%;
-  -o-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale( .5);
-  }
-  20% {
-    transform: scale( 0.75);
-  }
-  40% {
-    transform: scale( .75);
-  }
-  60% {
-    transform: scale( 0.75);
-  }
-  80% {
-    transform: scale( .5);
-  }
-  100% {
-    transform: scale( .5);
-  }
 }
 
 .panel.with-nav-tabs .panel-heading{
@@ -382,20 +265,3 @@ textarea {
 .panel-default{
   background-color: transparent;
 }
-/*.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
-    background-color: #f5f5f5;
-    border-color: #ddd;
-}
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
-    color: #777;   
-}
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
-    background-color: #ddd;
-}
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
-.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
-    color: #fff;
-    background-color: #555;
-}*/

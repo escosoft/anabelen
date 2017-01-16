@@ -27,6 +27,14 @@
          id="path15002"
          d="M 0,800 800,800 800,0 0,0 0,800 Z" />
     </clipPath>
+    <defs>
+      <style type="text/css">
+        @font-face {
+          font-family: Freestyle Script;
+          src: url('../fonts/FREESCPT.ttf');
+        }
+      </style>
+</defs>
   </defs>
   <sodipodi:namedview
      id="base"
