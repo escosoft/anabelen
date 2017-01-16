@@ -700,9 +700,13 @@
                             var hours = Math.floor((distance % day) / hour);
                             var minutes = Math.floor((distance % hour) / minute);
                             var seconds = Math.floor((distance % minute) / second);
+                            var hourText = hours + " h ";
+                            if(hours<10) {
+                                hourText = "0" + hours + " h ";
+                            }
 
                             dayline.textContent = "Quedan " + days + " días";
-                            hourline.textContent = hours + " h " + minutes + " m " + seconds + " s";
+                            hourline.textContent =  hourText + minutes + " m " + seconds + " s";
                         }
                         timer = setInterval(showRemaining, 1000);
                     });
