@@ -307,9 +307,7 @@
             </div>
             <div class="col-sm-6">
                 <h3>Vídeo</h3>
-                <div class="embed-responsive embed-responsive-16by9 shadow">
-                    <iframe allowfullscreen class="embed-responsive-item" src="https://www.youtube.com/embed/NUoh9qKaFiE"></iframe>
-                </div>
+                <div class="youtube-player" data-id="NUoh9qKaFiE"></div>
             </div>
         </div>
         <div class="row">
@@ -317,24 +315,24 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta1.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta1-sm.jpg" style="width:100%"></div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta2.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta2-sm.jpg" style="width:100%"></div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta3.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta3-sm.jpg" style="width:100%"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta4.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta4-sm.jpg" style="width:100%"></div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta5.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta5-sm.jpg" style="width:100%"></div>
             </div>
             <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta6.jpg" style="width:100%"></div>
+                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta6-sm.jpg" style="width:100%"></div>
             </div>
         </div>
     </div>
@@ -736,6 +734,40 @@ function carousel() {
         $(this).collapse('hide');
     }
 });
+</script>
+<script>
+ 
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+ 
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+ 
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+ 
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+ 
 </script>
 </body>
 </html>
