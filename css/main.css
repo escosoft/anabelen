@@ -31,7 +31,7 @@ h2 {
 }
 
 h2::before{
-content: url('../img/divider.png');
+content: url('../img/divider.svg');
 display: block;
 }
 
@@ -96,11 +96,6 @@ iframe {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-  transition: background 1s linear;
-  -webkit-transition: background 1s linear;
-  -moz-transform:  background 1s linear;
-  -ms-transform:  background 1s linear;
-  -o-transform:  background 1s linear;
 }
 
 .main-entrance-row img,
@@ -214,6 +209,12 @@ iframe {
   filter: url(#drop-shadow);
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+}
+
+#pending{
+  display: block;
+  width:100%;
+  height: auto;
 }
 
 .btn-sample { 

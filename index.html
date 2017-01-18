@@ -14,6 +14,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.css" integrity="sha256-wj7M9V99T9/93nK8iE1vAVrfzzAicm99o76ZNYyUrtE=" crossorigin="anonymous" />
     <!-- Custom CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="favicon.png" rel="icon" type="image/png">
@@ -41,6 +42,9 @@
                     <li>
                         <a class="" href="#welcome">BIENVENIDOS</a>
                     </li>
+                    <li>
+                        <a class="" href="#welcome">BLOG</a>
+                    </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">LA BODA <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -55,6 +59,9 @@
                             </li>
                             <li>
                                 <a href="#quinta">LA QUINTA MONTEGUERRA</a>
+                            </li>
+                            <li>
+                                <a href="#quinta">LISTA DE BODAS</a>
                             </li>
                         </ul>
                     </li>
@@ -221,8 +228,8 @@
     <div class="container main-row" id="we">
         <h2 class="text-center">LOS NOVIOS</h2>
         <div class="row">
-            <div class="col-sm-offset-2 col-sm-4 col-xs-6"><img alt="Luis" class="img-circle" src="img/luis.jpg"></div>
-            <div class="col-sm-4 col-xs-6"><img alt="Ana Belén" class="img-circle" src="img/anabelen.jpg"></div>
+            <div class="col-sm-offset-2 col-sm-4 col-xs-6"><img alt="Luis" src="img/luis.png"></div>
+            <div class="col-sm-4 col-xs-6"><img alt="Ana Belén" src="img/anabelen.png"></div>
         </div>
         <div class="row">
             <div class="col-sm-offset-2 col-sm-4">
@@ -245,9 +252,9 @@
                 El lugar aún no lo tenemos confirmado, pero os aseguramos que os gustará.</p>
                 <h5>LUGAR: INFORMACIÓN DISPONIBLE PRÓXIMAMENTE</h5>
                 <h5>CÓMO LLEGAR: INFORMACIÓN DISPONIBLE PRÓXIMAMENTE</h5>
+                <img id="pending" alt="Por confirmar" src="img/confirm.svg">
             </div>
         </div>
-        <div class="row"><img alt="Por confirmar" src="img/confirm.svg"></div>
     </div>
     <div class="container main-row" id="day">
         <h2 class="text-center">LA BODA</h2>
@@ -335,26 +342,28 @@
             <h3>Galería de imágenes</h3>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta1-sm.jpg" style="width:100%"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta2-sm.jpg" style="width:100%"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta3-sm.jpg" style="width:100%"></div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta4-sm.jpg" style="width:100%"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta5-sm.jpg" style="width:100%"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail"><img alt="Quinta" class="img-rounded" src="img/quinta6-sm.jpg" style="width:100%"></div>
-            </div>
+            <a href="img/quinta1.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta1-sm.jpg" class="img-rounded">
+            </a>
+            <a href="img/quinta2.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta2-sm.jpg" class="img-rounded">
+            </a>
+              <!-- Add the extra clearfix for only the required viewport -->
+            <div class="clearfix visible-xs-block"></div>
+            <a href="img/quinta3.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta3-sm.jpg" class="img-rounded">
+            </a>
+            <a href="img/quinta4.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta4-sm.jpg" class="img-rounded">
+            </a>
+              <!-- Add the extra clearfix for only the required viewport -->
+            <div class="clearfix visible-xs-block"></div>
+            <a href="img/quinta5.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta5-sm.jpg" class="img-rounded">
+            </a>
+            <a href="img/quinta6.jpg" data-toggle="lightbox" data-gallery="quinta-gallery" class="col-sm-2 col-xs-6">
+                <img src="img/quinta6-sm.jpg" class="img-rounded">
+            </a>
         </div>
     </div>
     <div class="container main-row text-center" id="getto">
@@ -620,191 +629,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="   anonymous"></script>
      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/4.0.1/ekko-lightbox.min.js" integrity="sha256-H6F05S2wD+mxs23BPOMwoMWPoGqKwGjiI0y9FHvXtrk=" crossorigin="anonymous"></script>
 
-    <script>
-        var slideIndex = 1;
-        var imagesArray = ['none',
-            'url(img/molino_pan.jpg)',
-            'url(img/playa_pan.jpg)',
-            'url(img/madrid.jpg)'
-        ];
-
-        showDivs(slideIndex);
-
-
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-      }
-
-      function currentDiv(n) {
-          showDivs(slideIndex = n);
-      }
-
-      function showDivs(n) {
-            var i;
-            var marker = document.getElementsByClassName("btn-marker");
-            var sample = document.getElementsByClassName("btn-sample");
-
-            if (n > imagesArray.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = imagesArray.length}
-            for (i = 0; i < sample.length; i++) {
-             sample[i].className = sample[i].className.replace(" active", "");
-            }
-            $('#myPage').css('background-image',imagesArray[slideIndex-1]);
-            $('#myPage').css('transition','background 1 linear');
-            marker[slideIndex-1].className += " active";
-        }                                                                                                               
-    </script> 
-     
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById('main-calendar');
-        var modalImg = document.getElementById("img01");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-            modal.style.display = "none";
-        }
-    </script>
-
-    <!-- Script to animate links -->
-    <script>
-        $(document).ready(function() {
-            // Initialize Tooltip
-            $('[data-toggle="tooltip"]').tooltip();
-            // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-                    // Store hash
-                    var hash = this.hash;
-                    var offsetval = $(hash).offset().top -49;
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: offsetval
-                    }, 1000, function() {
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-                if( $(event.target).is('a') && $(event.target).attr('class') != 'dropdown-toggle' ) {
-                    $(this).collapse('hide');
-                }
-            });
-
-        });
-    </script>
-
-    <!-- Script to set time left -->     
-    <script>
-        $(document).ready(function() {
-            var end = new Date('06/17/2017 07:00 PM');
-            var second = 1000;
-            var minute = second * 60;
-            var hour = minute * 60;
-            var day = hour * 24;
-            var timer;     
-
-            //alert("Document loaded, including graphics and embedded documents (like SVG)");
-            var a = document.getElementById("date");
-
-            //get the inner DOM of svg
-            var svgDoc = a.contentDocument;
-
-            //get the inner element by id
-            var dayline = svgDoc.getElementById("tspan10531");
-            var hourline = svgDoc.getElementById("tspantime");
-
-            function showRemaining() {
-                var now = new Date;
-                var distance = end - now;
-                if (distance < 0) {
-                    clearInterval(timer);
-                    $('#banner').text('EXPIRED!');
-                    return;
-                }
-                var days = Math.floor(distance / day);
-                var hours = Math.floor((distance % day) / hour);
-                var minutes = Math.floor((distance % hour) / minute);
-                var seconds = Math.floor((distance % minute) / second);
-                var hourText = hours + " h ";
-                if(hours<10) {
-                    hourText = "0" + hours + " h ";
-                }
-
-                dayline.textContent = "Quedan " + days + " días";
-                hourline.textContent =  hourText + minutes + " m " + seconds + " s";
-            }
-            timer = setInterval(showRemaining, 1000);
-        });                                                                                                                                                                                                                                                                 
-    </script> 
-
-    <!---  Script to alternate between girl/boy-->
-    <script>
-        $(document).ready(function() {
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("alternate");
-                for (i = 0; i < x.length; i++) {
-                   x[i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 4000); // Change image every 4 seconds
-            }
-        });
-    </script>
-
-    <script> 
-        /* Light YouTube Embeds by @labnol */
-        /* Web: http://labnol.org/?p=27941 */
-     
-        document.addEventListener("DOMContentLoaded",
-            function() {
-                var div, n,
-                    v = document.getElementsByClassName("youtube-player");
-                for (n = 0; n < v.length; n++) {
-                    div = document.createElement("div");
-                    div.setAttribute("data-id", v[n].dataset.id);
-                    div.innerHTML = labnolThumb(v[n].dataset.id);
-                    div.onclick = labnolIframe;
-                    v[n].appendChild(div);
-                }
-            });
-     
-        function labnolThumb(id) {
-            var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-                play = '<div class="play"></div>';
-            return thumb.replace("ID", id) + play;
-        }
-     
-        function labnolIframe() {
-            var iframe = document.createElement("iframe");
-            var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-            iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-            iframe.setAttribute("frameborder", "0");
-            iframe.setAttribute("allowfullscreen", "1");
-            this.parentNode.replaceChild(iframe, this);
-        }
+    <script src="js/main.js"></script>
  
-    </script>
 </body>
 </html>
