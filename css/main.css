@@ -102,8 +102,8 @@ iframe {
 .main-entrance-row object{
   margin: auto;
   display: block;
+  max-width: 100%;
 }
-
 
 #portada{
   padding-top: 10px;
