@@ -190,8 +190,11 @@ iframe {
     /* For mobile phones: */
     .col-xxs-12{
         width: 100%;
-    }.col-xxs-6{
+    }
+    .col-xxs-6{
         width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .xxs-bottom{
       padding-top: 20%;
