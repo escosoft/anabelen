@@ -4,11 +4,6 @@
 }
 
 @font-face {
-    font-family: kiki;
-    src: url(../fonts/Angelique-Rose-font-FFP.otf);
-}
-
-@font-face {
     font-family: typo;
     src: url(../fonts/Typo_Round_Light_Demo.otf);
 }
@@ -36,7 +31,7 @@ display: block;
 }
 
 h3 {
-  font-family: kiki;
+  font-family: 'Pacifico', cursive;
   color: #FFF;
 }
 
@@ -52,6 +47,10 @@ img {
 iframe {
   width: 100%;
   height: auto;
+}
+
+.gray{
+color: #777;
 }
 
 #navbar-container{
@@ -278,7 +277,6 @@ fieldset[disabled] .btn-sample.active {
   text-align: center;
 }
 
-
 .caption p{
   font-family: typo;
   color: #FFF;
@@ -293,6 +291,23 @@ fieldset[disabled] .btn-sample.active {
     box-shadow: 0 0 30px black;
     border-radius: 25px;
 }
+
+.thumbnaillist{
+  background-color: #FFF;
+  color: #000;
+}
+
+.thumbnaillist h3{
+    color: #000;
+}
+
+.thumbnaillist h3::before,
+.thumbnaillist h3::after{
+    content: url('../img/punto.png');
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
 
 footer {
   background-color: #2d2d30;
