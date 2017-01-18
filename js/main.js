@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 //<!-- Script to set time left -->    
 
-$(document).ready(function() {
+$(window).on(function() {
     var end = new Date('06/17/2017 07:00 PM');
     var second = 1000;
     var minute = second * 60;
