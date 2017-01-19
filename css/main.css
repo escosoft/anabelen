@@ -12,6 +12,7 @@ body {
   color: #FFF;
   padding-top: 50px;
   background-image: url("../img/wood_planks.jpg");
+  font-family: 'ABeeZee', sans-serif;
 }
 
 h2 {
@@ -97,6 +98,12 @@ color: #777;
   margin: auto;
   display: block;
   max-width: 100%;
+}
+
+.centeredimage{
+  margin: auto;
+  display: block;
+  max-width: 100%;  
 }
 
 #portada{
