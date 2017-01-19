@@ -393,7 +393,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-offset-2 col-md-4 col-xs-6">
+            <div class="col-sm-offset-2 col-sm-4 col-xs-12">
                 <div class="thumbnail thumbnaillist">
                     <h3 class="text-center">Súper Viaje</h3>
                     <img src="img/japon.jpg" align="Japón" class="img-rounded">
@@ -402,7 +402,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col-md-4 col-xs-6">
+            <div class="col-sm-4 col-xs-12">
                 <div class="thumbnail thumbnaillist">
                     <h3 class="text-center">Hipoteca</h3>
                     <img src="img/hipoteca.jpg" align="Hipoteca" class="img-rounded">
@@ -415,22 +415,28 @@
     </div>
     <div class="container main-row text-center" id="getto">
         <h2>CÓMO LLEGAR A TOMELLOSO</h2>
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-pills nav-center">
             <li class="active">
-                <a data-toggle="tab" href="#train">Tren</a>
+                <a data-toggle="pill" href="#train">Tren</a>
             </li>
             <li>
-                <a data-toggle="tab" href="#bus">Autobús</a>
+                <a data-toggle="pill" href="#bus">Autobús</a>
             </li>
             <li>
-                <a data-toggle="tab" href="#taxi">Taxi</a>
+                <a data-toggle="pill" href="#taxi">Taxi</a>
             </li>
             <li>
-                <a data-toggle="tab" href="#plane">Avión</a>
+                <a data-toggle="pill" href="#plane">Avión</a>
             </li>
         </ul>
-        <div class="tab-content">
-            <div class="tab-pane fade in active" id="train"></div>
+        <div class="tab-content panel panel-default">
+            <div id="train" class="tab-pane fade in active">
+                <h2>Tren</h2>
+            </div>
+            <div id="bus" class="tab-pane fade">
+                <h2>Autobús</h2>
+                <p>Some content in menu 1.</p>
+            </div>
         </div>
     </div>
     <div class="container main-row" id="hotels">
@@ -438,18 +444,17 @@
             <h2 class="text-center">HOTELES</h2>
         </div> 
         <div class="row">
-
-            <div id="maphotels" style="width:100%;height:500px"></div>
             <div class="col-sm-8 text-justify col-sm-offset-2">
                 <p>Este sección va dirigida a todos los que venís de fuera de Tomelloso y necesitáis alojamiento para recuperaros de la boda y de la preboda (el viernes 16 organizaremos algo para todos los que ya estéis por allí). Para facilitaros la logística hemos bloqueado habitaciones en tres hoteles, dos de ellos al completo, ya que de esta manera tendréis un buen descuento cortesía de la Mancha. La reserva la podéis hacer tanto para el fin de semana completo como para el sábado exclusivamente. Es muy importante que para beneficiaros del descuento la reserva la hagáis a través del teléfono directo del hotel indicando que vais a la boda de Luis y Ana Belén. El bloqueo de las habitaciones a nombre de nuestra boda dura hasta finales de abril, a partir de entonces no se aplicaría el descuento. Existen otros hoteles y apartamentos turísticos en la ciudad aparte de los que hemos reservado y también existe la posibilidad de buscar alojamiento en Alcázar de San Juan, ya que dispone de estación de tren muy bien comunicada, aunque en principio no contemplamos que la ruta del autobús pase por allí.</p>
             </div> 
         </div> 
         <div class="row">
-            <div class="col-xs-12 shadow">
+            <div class="col-sm-8 text-justify col-sm-offset-2 shadow">
                 <div class="panel with-nav-tabs panel-default">
                     <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a data-toggle="tab" href="#ramomar">H*** Ramomar</a></li>
+                        <ul class="nav nav-tabs" id="hoteltabs">
+                            <li class="active"><a data-toggle="tab" href="#hoteltab">Mapa</a></li>
+                            <li><a data-toggle="tab" href="#ramomar">H*** Ramomar</a></li>
                             <li><a data-toggle="tab" href="#altora">H*** Altora</a></li>
                             <li><a data-toggle="tab" href="#paloma">H*** Paloma</a></li>
                             <li><a data-toggle="tab" href="#otherhotels">Otros Hoteles</a></li>
@@ -457,16 +462,13 @@
                     </div>
                     <div class="panel-body">
                         <div class="tab-content">
-                            <div class="tab-pane fade in active" id="ramomar">
+                            <div class="tab-pane fade in active" id="hoteltab">
+                                <div id="maphotels" class="embed-responsive embed-responsive-16by9"></div>
+                            </div>
+                            <div class="tab-pane fade" id="ramomar">
                                 <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="thumbnail"><img alt="Ramomar" class="img-rounded" src="img/ramomar.jpg" style="width:100%"></div>
-                                        <div class="embed-responsive embed-responsive-4by3">
-                                            <iframe allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.067691935041!2d-3.026026684642159!3d39.15044197953245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd68fc873595445d%3A0xa8f6b7d4b3d72917!2sHotel+Ramomar+S+A!5e0!3m2!1ses!2ses!4v1483640505713"></iframe>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <h3>General</h3>
+                                    <div class="col-xs-12">
+                                        <h3>Hotel Ramomar</h3>
                                         <p>Está situado muy cerca de la Plaza de Toros, desde donde está previsto que hagan una parada los autobuses que os llevarán a la Quinta Monteguerra.</p>
                                         <p>El hotel dispone de 42 habitaciones, distribuidas en 30 habitaciones dobles y 12 individuales. En algunas habitaciones dobles se puede disponer de una cama supletoria o cuna, bajo petición al realizar la reserva. También dispone de habitaciones familiares, con capacidad para 4 personas, así como <strong>parking subterráneo y piscina exterior.</strong></p>
                                         <p>HOTEL RAMOMAR***<br>
@@ -493,7 +495,8 @@
                                             <li>Las reservas se tendrán que hacer directamente con el hotel, a través de teléfono directo 926 505 994, o mediante correo electrónico a la dirección reservas@hotelramomar.com.</li>
                                             <li>Política de cancelación: las habitaciones reservadas se podrán cancelar o modificar sin coste alguno como máximo un mes antes de la fecha de la reserva. Pasada esa fecha, el coste de cancelación o modificación será de una noche.</li>
                                             <li>Cuando realicen la reserva se pedirá un número de tarjeta de crédito y su caducidad como garantía de la misma.</li>
-                                        </ul>
+                                        </ul>                                        
+                                        <div class="thumbnail"><img alt="Ramomar" class="img-rounded" src="img/ramomar.jpg" style="width:100%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -646,7 +649,7 @@
     <div class="container main-row" id="hair">
         <h2 class="text-center">PELUQUERÍAS</h2>
         <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-8">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8">
                 <p>Una de las dudas más frecuentes que asaltan a los invitad/as de una boda es la ubicación de las peluquerías. Así que os hemos preparado este mapa con un buen número de ellas. Hemos incluido los tres hoteles con los que hay reservas para que os sirvan de referencia. Os recomendamos que reservéis cuanta antes, no lo dejéis para última hora porque <strong>son fechas muy solicitadas.</strong>. Pinchando en los iconos del mapa os aparecerá el nombre y el teléfono de contacto.</p>
                 <div class="embed-responsive embed-responsive-4by3">
                     <iframe src="https://www.google.com/maps/d/embed?mid=1dqhDoUxbH_SMQ59iDLuvLJPXGYU"></iframe>
@@ -656,16 +659,14 @@
     </div>
     <div class="container main-row" id="rsvp">
         <h2>CONFIRMA TU ASISTENCIA</h2>
-        <form>
+        <form action="https://formspree.io/your@email.com" method="POST">
             <div class="form-group">
-                <label for="email">Email address:</label> <input class="form-control" id="email" type="email">
-            </div>
-            <div class="form-group">
-                <label for="pwd">Password:</label> <input class="form-control" id="pwd" type="password">
+                <label for="email">Email address:</label> <input class="form-control" id="email" type="email" name="email">
             </div>
             <div class="checkbox">
-                <label><input type="checkbox"> Remember me</label>
+                <label><input type="checkbox" name="alergias">Alergias</label>
             </div>
+            <button type="submit" class="btn btn-default">Enviar</button>
         </form>
     </div><!-- Footer -->
     <footer class="text-center">
@@ -799,20 +800,31 @@ $(document).ready(function() {
 
     </script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('maphotels'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
+    <script>
+        var map;
+        function initMap() {
+            var center = {lat: 39.1922643, lng: -3.2756689};
+            map = new google.maps.Map(document.getElementById('maphotels'), {
+            center: center,
+            zoom: 9
+            });  
+            var ramomarcenter = {lat: 39.2922643, lng: -3.2756689};
+            var altoracenter = {lat: 39.0922643, lng: -3.2756689};
+        var ramomar = new google.maps.Marker({position:ramomarcenter, map: map});  
+        var altora = new google.maps.Marker({position:altoracenter, map: map});
 
+        google.maps.event.addListener(ramomar,'click',function() {
+            $('#hoteltabs a[href="#ramomar"]').tab('show');
+//            this.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+          });
+        }
     </script>
+
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNDTggFfhGzXQJ582RNi3KUPO_4xfk3DU&callback=initMap">
     </script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNDTggFfhGzXQJ582RNi3KUPO_4xfk3DU&libraries=places"></script>
 
 </body>
 </html>

@@ -7,11 +7,6 @@
     font-family: typo;
     src: url(../fonts/Typo_Round_Light_Demo.otf);
 }
-@font-face {
-    font-family: "Freestyle Script";
-    src: url(../fonts/FREESCPT.ttf);
-}
-
 
 body {
   color: #FFF;
@@ -35,8 +30,8 @@ h3 {
   color: #FFF;
 }
 
-h4 { 
-  color: #111;
+h4 {
+  color: #BBB;
 }
 
 img {
@@ -420,3 +415,13 @@ textarea {
         background: url("//i.imgur.com/TxzC70f.png") no-repeat;
         cursor: pointer;
     }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+        color: black;
+        background-color: #fcd900;
+    }
+
+        .nav-pills > li.active > a:hover {
+            background-color: #efcb00;
+            color:black;
+        }
