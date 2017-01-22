@@ -419,3 +419,7 @@ textarea {
     color: #3276b1;
     background-color: #fff;
 }
+
+fieldset[disabled] .form-control{
+  background-color: #CCC;
+}

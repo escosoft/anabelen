@@ -952,10 +952,10 @@
                     <div class="form-group">
                         <label for="busform">¿Necesitas autobús?</label>
                             <div class="input-group">
-                                <div id="radioBtn" class="btn-group">
-                                    <a class="btn btn-primary btn-sm active" data-toggle="fun" data-title="Y">SÍ</a>
-                                    <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="X">No lo sé</a>
-                                    <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="N">NO</a>
+                                <div id="busBtn" class="btn-group">
+                                    <a class="btn btn-primary btn-sm active" data-toggle="busform" data-title="Y">SÍ</a>
+                                    <a class="btn btn-primary btn-sm notActive" data-toggle="busform" data-title="X">No lo sé</a>
+                                    <a class="btn btn-primary btn-sm notActive" data-toggle="busform" data-title="N">NO</a>
                                 </div>
                                 <input type="hidden" name="busform" id="busform" required>
                             </div>
@@ -963,10 +963,10 @@
                     <div class="form-group">
                         <label for="prewebform">¿Vienes a la preboda?</label>
                             <div class="input-group">
-                                <div id="radioBtn" class="btn-group">
-                                    <a class="btn btn-primary btn-sm active" data-toggle="fun" data-title="Y">SÍ</a>
-                                    <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="X">No lo sé</a>
-                                    <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="N">NO</a>
+                                <div id="prewebBtn" class="btn-group">
+                                    <a class="btn btn-primary btn-sm active" data-toggle="prewebform" data-title="Y">SÍ</a>
+                                    <a class="btn btn-primary btn-sm notActive" data-toggle="prewebform" data-title="X">No lo sé</a>
+                                    <a class="btn btn-primary btn-sm notActive" data-toggle="prewebform" data-title="N">NO</a>
                                 </div>
                                 <input type="hidden" name="prewebform" id="prewebform" required>
                             </div>
@@ -1116,7 +1116,7 @@
     </script>
 
     <script>
-        $('#radioBtn a').on('click', function(){
+        $('#prewebBtn a').on('click', function(){
     var sel = $(this).data('title');
     var tog = $(this).data('toggle');
     $('#'+tog).prop('value', sel);
@@ -1126,6 +1126,16 @@
 })
     </script>
 
+    <script>
+        $('#busBtn a').on('click', function(){
+    var sel = $(this).data('title');
+    var tog = $(this).data('toggle');
+    $('#'+tog).prop('value', sel);
+    
+    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+})
+    </script>
     <script>
         function plusoneguest()
             {
