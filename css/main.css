@@ -259,9 +259,21 @@ iframe {
     text-align: center;
 }
 .caption p {
+    color: #FFF;
+}
+
+#welcome .caption {
+    margin-top: 10px;
+    box-shadow: 0 0 30px black;
+    text-align: center;
+}
+#welcome .caption p {
     font-family: typo;
     color: #FFF;
 }
+
+
+
 .main-row {
     min-height: calc(100vh - 50px);
     background-image: url("../img/black-tile.png");
