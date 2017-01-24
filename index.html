@@ -941,13 +941,13 @@
                 <p style="display: block">A través de este formulario podéis confirmanos vuestra asistencia, además de proporcionarnos algunos detalles que nos pueden facilitar la organización.</p>
                 <form action="https://formspree.io/escolara17@gmail.com" method="POST">
                     <div class="form-group">
-                        <label for="rsvpform" required>¿Vienes a la boda?</label>
+                        <label for="rsvpform">¿Vienes a la boda?</label>
                         <div class="input-group">
                             <div id="rsvpBtn" class="btn-group">
                                 <a class="btn btn-primary btn-sm active" data-toggle="rsvpform" data-title="Y">SÍ</a>
                                 <a class="btn btn-primary btn-sm notActive" data-toggle="rsvpform" data-title="N">NO</a>
                             </div>
-                            <input type="hidden" name="rsvpform" id="rsvpform">
+                            <input type="hidden" name="rsvpform" id="rsvpform" required>
                         </div>
                     </div>
                     <div class="form-group">
