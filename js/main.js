@@ -1,8 +1,8 @@
 var slideIndex = 1;
 var imagesArray = ['none',
-    'url(img/molino_pan.jpg)',
-    'url(img/playa_pan.jpg)',
-    'url(img/madrid.jpg)'
+    'url(img/slides/molino_pan.jpg)',
+    'url(img/slides/playa_pan.jpg)',
+    'url(img/slides/madrid.jpg)'
 ];
 
 showDivs(slideIndex);
