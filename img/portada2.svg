@@ -158,16 +158,6 @@
      id="layer1"
      transform="translate(1023.4211,-414.591)">
     <g
-       id="g4156"
-       transform="matrix(1.25,0,0,-1.25,-543.1502,644.35492)"
-       style="opacity:0.5">
-      <path
-         d="m 0,0 c 0,-99.698 -80.821,-180.52 -180.52,-180.52 -99.698,0 -180.519,80.822 -180.519,180.52 0,99.698 80.821,180.519 180.519,180.519 C -80.821,180.519 0,99.698 0,0"
-         style="fill:#e5e2c5;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         id="path4158"
-         inkscape:connector-curvature="0" />
-    </g>
-    <g
        id="g4160"
        transform="matrix(1.25,0,0,-1.25,-517.56007,674.88517)">
       <path
